@@ -1069,6 +1069,16 @@ ul { list-style: none; }
   width: 100%;
 }
 
+.courses-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.courses-left .course-card {
+  flex: 1;
+}
+
 .course-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
