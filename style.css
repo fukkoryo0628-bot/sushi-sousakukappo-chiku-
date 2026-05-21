@@ -1059,7 +1059,7 @@ ul { list-style: none; }
 
 .omakase-courses {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   margin-bottom: 48px;
   align-items: stretch;
@@ -1067,16 +1067,6 @@ ul { list-style: none; }
 
 .omakase-courses .course-card {
   width: 100%;
-}
-
-.courses-left {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.courses-left .course-card {
-  flex: 1;
 }
 
 .course-photos {
