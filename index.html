@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" id="html-root">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +83,7 @@
           <li><a href="#reserve" class="nav-link nav-reserve">RESERVE</a></li>
         </ul>
       </nav>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
       <button class="hamburger" id="hamburger" aria-label="メニュー">
         <span></span><span></span><span></span>
       </button>
@@ -100,10 +101,10 @@
         <img src="logo.png" alt="鮨創作割烹ちく｜福岡・糸島の江戸前寿司・創作和食" class="hero-logo-img">
       </h1>
       <p class="hero-en">Itoshima, Fukuoka</p>
-      <p class="hero-sub">糸島唯一の江戸前寿司と創作和食。<br>全国より届く旬魚と、福岡・糸島の四季を味わう</p>
+      <p class="hero-sub" data-i18n="hero-sub">糸島唯一の江戸前寿司と創作和食。<br>全国より届く旬魚と、福岡・糸島の四季を味わう</p>
       <div class="hero-actions">
-        <a href="#reserve" class="btn btn-primary">ご予約はこちら</a>
-        <a href="#omakase" class="btn btn-outline">おまかせコースを見る</a>
+        <a href="#reserve" class="btn btn-primary" data-i18n="btn-reserve">ご予約はこちら</a>
+        <a href="#omakase" class="btn btn-outline" data-i18n="btn-omakase">おまかせコースを見る</a>
       </div>
     </div>
   </section>
@@ -114,19 +115,18 @@
       <div class="news-inner">
         <div class="news-header">
           <div class="section-label">NEWS</div>
-          <h2 class="news-title">お知らせ</h2>
+          <h2 class="news-title" data-i18n="news-title">お知らせ</h2>
         </div>
         <div class="news-right">
           <ul class="news-list" id="news-list">
-            <!-- CMS未設定時の仮データ（CMS連携後は自動置換されます） -->
             <li class="news-item">
               <time class="news-date">2026.05.21</time>
-              <span class="news-category">お知らせ</span>
-              <p class="news-text">ホームページを開設いたしました</p>
+              <span class="news-category" data-i18n="news-category-notice">お知らせ</span>
+              <p class="news-text" data-i18n="news-launch">ホームページを開設いたしました</p>
             </li>
           </ul>
           <div class="news-footer">
-            <a href="#" class="news-more" id="news-more">一覧を見る</a>
+            <a href="#" class="news-more" id="news-more" data-i18n="news-more">一覧を見る</a>
           </div>
         </div>
       </div>
@@ -139,19 +139,19 @@
       <div class="concept-inner">
         <div class="concept-text">
           <div class="section-label">CONCEPT</div>
-          <h2 class="section-title">素材と向き合い、<br>一貫に静かな余韻を込める。</h2>
-          <p class="concept-body">
+          <h2 class="section-title" data-i18n="concept-title">素材と向き合い、<br>一貫に静かな余韻を込める。</h2>
+          <p class="concept-body" data-i18n="concept-body-1">
             全国各地より届く旬の魚介。<br>
             そして糸島の豊かな風土が育てた野菜や食材。<br>
             その時季に最も良い素材を見極め、<br>
             一つひとつ丁寧に仕立てています。
           </p>
-          <p class="concept-body">
+          <p class="concept-body" data-i18n="concept-body-2">
             福岡・糸島で唯一の江戸前寿司として、創作和食の技も交えながら、季節の移ろいを一皿ごとに表現します。<br>
             赤酢のシャリ、丁寧に仕込む酒肴、そして握りへと続く流れ。<br>
             料理と空間、会話までも含めて、その日だけの時間をお愉しみください。
           </p>
-          <p class="concept-body">
+          <p class="concept-body" data-i18n="concept-body-3">
             カウンター8席。職人の所作を間近に感じながら味わう空間と、<br>
             ゆったりと過ごせる個室をご用意しております。<br>
             福岡県糸島市での接待や記念日、大切な方とのお食事にも、静かなひとときをお過ごしください。
@@ -177,7 +177,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-label light">MENU</div>
-        <h2 class="section-title light">メニュー</h2>
+        <h2 class="section-title light" data-i18n="menu-title">メニュー</h2>
       </div>
       <div class="menu-grid menu-grid-2">
 
@@ -188,16 +188,16 @@
           </div>
           <div class="menu-card-body">
             <span class="menu-category">À la carte</span>
-            <h3 class="menu-item-name">アラカルト</h3>
-            <p class="menu-item-desc">赤酢のシャリで仕立てる旬の一貫。<br>握り・酒肴・巻物・お椀・甘味など、<br>お好みのものをお選びいただけます。</p>
+            <h3 class="menu-item-name" data-i18n="menu-alacarte-name">アラカルト</h3>
+            <p class="menu-item-desc" data-i18n="menu-alacarte-desc">赤酢のシャリで仕立てる旬の一貫。<br>握り・酒肴・巻物・お椀・甘味など、<br>お好みのものをお選びいただけます。</p>
             <ul class="menu-item-list">
-              <li><span>握り</span>赤酢のシャリで仕立てる旬の一貫</li>
-              <li><span>酒肴</span>日替わりで愉しむ季節の逸品</li>
-              <li><span>巻物</span>細巻き・太巻き 各種</li>
-              <li><span>お椀</span>出汁を味わう一椀</li>
-              <li><span>甘味</span>季節の甘味</li>
+              <li><span data-i18n="menu-alacarte-l1-label">握り</span><span data-i18n="menu-alacarte-l1-desc">赤酢のシャリで仕立てる旬の一貫</span></li>
+              <li><span data-i18n="menu-alacarte-l2-label">酒肴</span><span data-i18n="menu-alacarte-l2-desc">日替わりで愉しむ季節の逸品</span></li>
+              <li><span data-i18n="menu-alacarte-l3-label">巻物</span><span data-i18n="menu-alacarte-l3-desc">細巻き・太巻き 各種</span></li>
+              <li><span data-i18n="menu-alacarte-l4-label">お椀</span><span data-i18n="menu-alacarte-l4-desc">出汁を味わう一椀</span></li>
+              <li><span data-i18n="menu-alacarte-l5-label">甘味</span><span data-i18n="menu-alacarte-l5-desc">季節の甘味</span></li>
             </ul>
-            <p class="menu-item-note">※ 価格はメニュー表をご参照ください</p>
+            <p class="menu-item-note" data-i18n="menu-alacarte-note">※ 価格はメニュー表をご参照ください</p>
           </div>
         </div>
 
@@ -205,15 +205,15 @@
         <div class="menu-card menu-card-large">
           <div class="menu-card-body">
             <span class="menu-category">Take-out</span>
-            <h3 class="menu-item-name">お持ち帰り</h3>
-            <p class="menu-item-desc">ご自宅でのお食事や、<br>法事・お祝いなどのお集まりにも。<br>前日までのご予約をお願いいたします。</p>
+            <h3 class="menu-item-name" data-i18n="menu-takeout-name">お持ち帰り</h3>
+            <p class="menu-item-desc" data-i18n="menu-takeout-desc">ご自宅でのお食事や、<br>法事・お祝いなどのお集まりにも。<br>前日までのご予約をお願いいたします。</p>
             <ul class="menu-item-list">
-              <li><span>折詰</span>旬の握り・ちらし寿司</li>
-              <li><span>巻物</span>太巻き・細巻き 各種</li>
-              <li><span>酒肴</span>季節の日替わり料理</li>
-              <li><span>お集まり</span>法事・お祝い・慶事対応可</li>
+              <li><span data-i18n="menu-takeout-l1-label">折詰</span><span data-i18n="menu-takeout-l1-desc">旬の握り・ちらし寿司</span></li>
+              <li><span data-i18n="menu-takeout-l2-label">巻物</span><span data-i18n="menu-takeout-l2-desc">太巻き・細巻き 各種</span></li>
+              <li><span data-i18n="menu-takeout-l3-label">酒肴</span><span data-i18n="menu-takeout-l3-desc">季節の日替わり料理</span></li>
+              <li><span data-i18n="menu-takeout-l4-label">お集まり</span><span data-i18n="menu-takeout-l4-desc">法事・お祝い・慶事対応可</span></li>
             </ul>
-            <p class="menu-item-note">※ 前日までのご予約をお願いいたします</p>
+            <p class="menu-item-note" data-i18n="menu-takeout-note">※ 前日までのご予約をお願いいたします</p>
           </div>
           <div class="menu-card-img">
             <img src="IMG_8109.JPG" alt="お持ち帰り折詰" loading="lazy">
@@ -229,8 +229,8 @@
     <div class="container">
       <div class="section-header">
         <div class="section-label">OMAKASE</div>
-        <h2 class="section-title">おまかせコース</h2>
-        <p class="section-desc">その日の仕入れにより内容が変わります。</p>
+        <h2 class="section-title" data-i18n="omakase-title">おまかせコース</h2>
+        <p class="section-desc" data-i18n="omakase-desc">その日の仕入れにより内容が変わります。</p>
       </div>
       <div class="omakase-courses">
 
@@ -238,41 +238,41 @@
           <div class="course-card course-premium">
             <div class="course-header">
               <div class="course-badge">Course A</div>
-              <h3 class="course-name">握りコース</h3>
-              <div class="course-price">¥6,600 <span>（税込）</span></div>
+              <h3 class="course-name" data-i18n="course-a-name">握りコース</h3>
+              <div class="course-price">¥6,600 <span data-i18n="tax-incl">（税込）</span></div>
             </div>
             <div class="course-body">
               <ul class="course-list">
-                <li><span class="course-num">01</span>先付け</li>
-                <li><span class="course-num">02</span>握り 8貫</li>
-                <li><span class="course-num">03</span>巻物 1本</li>
-                <li><span class="course-num">04</span>お椀</li>
+                <li><span class="course-num">01</span><span data-i18n="course-a-i1">先付け</span></li>
+                <li><span class="course-num">02</span><span data-i18n="course-a-i2">握り 8貫</span></li>
+                <li><span class="course-num">03</span><span data-i18n="course-a-i3">巻物 1本</span></li>
+                <li><span class="course-num">04</span><span data-i18n="course-a-i4">お椀</span></li>
               </ul>
-              <p class="course-note">※ 仕入れにより内容が変わります</p>
+              <p class="course-note" data-i18n="course-note">※ 仕入れにより内容が変わります</p>
             </div>
           </div>
 
           <!-- 税込8,800円コース -->
           <div class="course-card course-premium featured">
             <div class="course-badge-wrap">
-              <span class="course-featured-badge">おすすめ</span>
+              <span class="course-featured-badge" data-i18n="course-b-badge">おすすめ</span>
             </div>
             <div class="course-header">
               <div class="course-badge">Course B</div>
-              <h3 class="course-name">おまかせコース</h3>
-              <div class="course-price">¥8,800 <span>（税込）</span></div>
+              <h3 class="course-name" data-i18n="course-b-name">おまかせコース</h3>
+              <div class="course-price">¥8,800 <span data-i18n="tax-incl">（税込）</span></div>
             </div>
             <div class="course-body">
               <ul class="course-list">
-                <li><span class="course-num">01</span>先付け</li>
-                <li><span class="course-num">02</span>造里</li>
-                <li><span class="course-num">03</span>蒸し物</li>
-                <li><span class="course-num">04</span>揚げ物</li>
-                <li><span class="course-num">05</span>寿司 8貫</li>
-                <li><span class="course-num">06</span>お椀</li>
-                <li><span class="course-num">07</span>水菓子</li>
+                <li><span class="course-num">01</span><span data-i18n="course-b-i1">先付け</span></li>
+                <li><span class="course-num">02</span><span data-i18n="course-b-i2">造里</span></li>
+                <li><span class="course-num">03</span><span data-i18n="course-b-i3">蒸し物</span></li>
+                <li><span class="course-num">04</span><span data-i18n="course-b-i4">揚げ物</span></li>
+                <li><span class="course-num">05</span><span data-i18n="course-b-i5">寿司 8貫</span></li>
+                <li><span class="course-num">06</span><span data-i18n="course-b-i6">お椀</span></li>
+                <li><span class="course-num">07</span><span data-i18n="course-b-i7">水菓子</span></li>
               </ul>
-              <p class="course-note">※ 仕入れにより内容が変わります</p>
+              <p class="course-note" data-i18n="course-note">※ 仕入れにより内容が変わります</p>
             </div>
           </div>
 
@@ -280,21 +280,21 @@
           <div class="course-card course-premium">
             <div class="course-header">
               <div class="course-badge">Course C</div>
-              <h3 class="course-name">特別おまかせコース</h3>
-              <div class="course-price">¥15,000 <span>（税込）</span></div>
+              <h3 class="course-name" data-i18n="course-c-name">特別おまかせコース</h3>
+              <div class="course-price">¥15,000 <span data-i18n="tax-incl">（税込）</span></div>
             </div>
             <div class="course-body">
               <ul class="course-list">
-                <li><span class="course-num">01</span>八寸</li>
-                <li><span class="course-num">02</span>造里</li>
-                <li><span class="course-num">03</span>蒸し物</li>
-                <li><span class="course-num">04</span>煮物</li>
-                <li><span class="course-num">05</span>揚げ物</li>
-                <li><span class="course-num">06</span>寿司 10貫</li>
-                <li><span class="course-num">07</span>お椀</li>
-                <li><span class="course-num">08</span>水菓子</li>
+                <li><span class="course-num">01</span><span data-i18n="course-c-i1">八寸</span></li>
+                <li><span class="course-num">02</span><span data-i18n="course-c-i2">造里</span></li>
+                <li><span class="course-num">03</span><span data-i18n="course-c-i3">蒸し物</span></li>
+                <li><span class="course-num">04</span><span data-i18n="course-c-i4">煮物</span></li>
+                <li><span class="course-num">05</span><span data-i18n="course-c-i5">揚げ物</span></li>
+                <li><span class="course-num">06</span><span data-i18n="course-c-i6">寿司 10貫</span></li>
+                <li><span class="course-num">07</span><span data-i18n="course-c-i7">お椀</span></li>
+                <li><span class="course-num">08</span><span data-i18n="course-c-i8">水菓子</span></li>
               </ul>
-              <p class="course-note">※ 仕入れにより内容が変わります</p>
+              <p class="course-note" data-i18n="course-note">※ 仕入れにより内容が変わります</p>
             </div>
           </div>
 
@@ -323,17 +323,17 @@
             </svg>
           </div>
           <div class="budget-course-text">
-            <h4 class="budget-course-title">ご予算に合わせたコースも承ります</h4>
-            <p class="budget-course-desc">お気軽にご相談ください。ご要望・人数・ご予算に応じて、<br>特別なコースをご用意いたします。</p>
+            <h4 class="budget-course-title" data-i18n="budget-title">ご予算に合わせたコースも承ります</h4>
+            <p class="budget-course-desc" data-i18n="budget-desc">お気軽にご相談ください。ご要望・人数・ご予算に応じて、<br>特別なコースをご用意いたします。</p>
           </div>
-          <a href="https://www.instagram.com/sushi.sousakukappou_chiku" target="_blank" rel="noopener" class="btn btn-outline budget-course-btn">ご相談・ご予約</a>
+          <a href="https://www.instagram.com/sushi.sousakukappou_chiku" target="_blank" rel="noopener" class="btn btn-outline budget-course-btn" data-i18n="budget-btn">ご相談・ご予約</a>
         </div>
       </div>
 
       <div class="omakase-note">
-        <p>アレルギーのある方は事前にお知らせください。</p>
-        <p>ドリンクは別途。</p>
-        <p>お子様向けメニューはご相談ください。</p>
+        <p data-i18n="omakase-note-1">アレルギーのある方は事前にお知らせください。</p>
+        <p data-i18n="omakase-note-2">ドリンクは別途。</p>
+        <p data-i18n="omakase-note-3">お子様向けメニューはご相談ください。</p>
       </div>
     </div>
   </section>
@@ -345,34 +345,34 @@
       <div class="info-inner">
         <div class="info-text">
           <div class="section-label light">ACCESS</div>
-          <h2 class="section-title light">店舗情報</h2>
+          <h2 class="section-title light" data-i18n="info-title">店舗情報</h2>
           <dl class="info-list">
             <div class="info-row">
-              <dt>住所</dt>
-              <dd>〒819-1116<br>福岡県糸島市前原中央2-3-39</dd>
+              <dt data-i18n="info-address-label">住所</dt>
+              <dd data-i18n="info-address-val">〒819-1116<br>福岡県糸島市前原中央2-3-39</dd>
             </div>
             <div class="info-row">
-              <dt>電話</dt>
+              <dt data-i18n="info-phone-label">電話</dt>
               <dd><a href="tel:080-3977-4498">080-3977-4498</a></dd>
             </div>
             <div class="info-row">
-              <dt>営業時間</dt>
-              <dd>
+              <dt data-i18n="info-hours-label">営業時間</dt>
+              <dd data-i18n="info-hours-val">
                 17:00〜22:30（LO 22:00）<br>
                 金・土曜日 17:00〜24:00（食事LO 23:00 / ドリンクLO 23:30）
               </dd>
             </div>
             <div class="info-row">
-              <dt>定休日</dt>
-              <dd>水曜日</dd>
+              <dt data-i18n="info-closed-label">定休日</dt>
+              <dd data-i18n="info-closed-val">水曜日</dd>
             </div>
             <div class="info-row">
-              <dt>席数</dt>
-              <dd>カウンター8席、個室1室（8名掛け）</dd>
+              <dt data-i18n="info-seats-label">席数</dt>
+              <dd data-i18n="info-seats-val">カウンター8席、個室1室（8名掛け）</dd>
             </div>
             <div class="info-row">
-              <dt>アクセス</dt>
-              <dd>筑前前原駅より徒歩圏内</dd>
+              <dt data-i18n="info-access-label">アクセス</dt>
+              <dd data-i18n="info-access-val">筑前前原駅より徒歩圏内</dd>
             </div>
           </dl>
         </div>
@@ -395,8 +395,8 @@
     <div class="container">
       <div class="section-header">
         <div class="section-label">RESERVATION</div>
-        <h2 class="section-title">ご予約</h2>
-        <p class="section-desc">完全予約制。お電話またはオンラインにてご予約ください。</p>
+        <h2 class="section-title" data-i18n="reserve-title">ご予約</h2>
+        <p class="section-desc" data-i18n="reserve-desc">完全予約制。お電話またはオンラインにてご予約ください。</p>
       </div>
       <div class="reserve-options">
         <div class="reserve-card">
@@ -406,9 +406,9 @@
               <path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="reserve-title">オンライン予約</h3>
-          <p class="reserve-desc">24時間いつでもご予約いただけます。コース・日時・人数をお選びください。</p>
-          <a href="https://www.instagram.com/sushi.sousakukappou_chiku" target="_blank" rel="noopener noreferrer" class="btn btn-primary reserve-btn">オンライン予約へ</a>
+          <h3 class="reserve-title" data-i18n="reserve-online-title">オンライン予約</h3>
+          <p class="reserve-desc" data-i18n="reserve-online-desc">24時間いつでもご予約いただけます。コース・日時・人数をお選びください。</p>
+          <a href="https://www.instagram.com/sushi.sousakukappou_chiku" target="_blank" rel="noopener noreferrer" class="btn btn-primary reserve-btn" data-i18n="reserve-online-btn">オンライン予約へ</a>
         </div>
         <div class="reserve-divider">
           <span>or</span>
@@ -419,20 +419,20 @@
               <path d="M10 10c0 0 2-1 4 2l2 4-3 2s1 5 5 9 9 5 9 5l2-3 4 2c3 2 2 4 2 4-2 4-10 2-18-6S6 14 10 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="reserve-title">お電話でのご予約</h3>
-          <p class="reserve-desc">ご不明な点やご要望はお電話にてお気軽にどうぞ。担当者が丁寧にご対応します。</p>
+          <h3 class="reserve-title" data-i18n="reserve-phone-title">お電話でのご予約</h3>
+          <p class="reserve-desc" data-i18n="reserve-phone-desc">ご不明な点やご要望はお電話にてお気軽にどうぞ。担当者が丁寧にご対応します。</p>
           <a href="tel:080-3977-4498" class="btn btn-outline reserve-btn tel-btn">080-3977-4498</a>
-          <p class="reserve-hours">受付時間：15:00〜22:00（水曜除く）</p>
+          <p class="reserve-hours" data-i18n="reserve-hours">受付時間：15:00〜22:00（水曜除く）</p>
         </div>
       </div>
       <div class="reserve-note">
-        <h4 class="reserve-note-title">ご予約の際のお願い</h4>
+        <h4 class="reserve-note-title" data-i18n="reserve-note-title">ご予約の際のお願い</h4>
         <ul class="reserve-note-list">
-          <li>キャンセルにつきましては、ご予約日の3日前までにご連絡をお願いいたします。以降のキャンセルは、所定のキャンセル料を頂戴いたします。</li>
-          <li>お席のご利用は2時間程度を目安とさせていただいております。ごゆっくりお過ごしくださいませ。</li>
-          <li>アレルギーやお苦手な食材がございましたら、ご予約時にお申し付けください。</li>
-          <li>貸切でのご利用も承っております。お気軽にご相談ください。</li>
-          <li>お子様のご来店につきましては、事前にご相談をお願いいたします。</li>
+          <li data-i18n="reserve-note-1">キャンセルにつきましては、ご予約日の3日前までにご連絡をお願いいたします。以降のキャンセルは、所定のキャンセル料を頂戴いたします。</li>
+          <li data-i18n="reserve-note-2">お席のご利用は2時間程度を目安とさせていただいております。ごゆっくりお過ごしくださいませ。</li>
+          <li data-i18n="reserve-note-3">アレルギーやお苦手な食材がございましたら、ご予約時にお申し付けください。</li>
+          <li data-i18n="reserve-note-4">貸切でのご利用も承っております。お気軽にご相談ください。</li>
+          <li data-i18n="reserve-note-5">お子様のご来店につきましては、事前にご相談をお願いいたします。</li>
         </ul>
       </div>
     </div>
@@ -461,14 +461,14 @@
           </svg>
         </a>
       </div>
-      <p class="footer-address">〒819-1116 福岡県糸島市前原中央2-3-39</p>
+      <p class="footer-address" data-i18n="footer-address">〒819-1116 福岡県糸島市前原中央2-3-39</p>
       <p class="footer-copy">&copy; 2025 鮨創作割烹ちく. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- 告知バー（下固定） -->
   <div class="announce-bar">
-    <p class="announce-text">2026年7月中旬オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします</p>
+    <p class="announce-text" data-i18n="announce">2026年7月中旬オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします</p>
   </div>
 
   <script src="main.js"></script>

@@ -1767,3 +1767,31 @@ ul { list-style: none; }
   .info-row { grid-template-columns: 70px 1fr; }
   .gmap { height: 260px; }
 }
+
+/* 言語切り替えボタン */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid rgba(201, 169, 110, 0.6);
+  color: var(--gold-light, #c9a96e);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.lang-toggle:hover {
+  background: var(--gold-light, #c9a96e);
+  color: #0d0c0a;
+  border-color: var(--gold-light, #c9a96e);
+}
+@media (max-width: 768px) {
+  .lang-toggle {
+    margin-left: 0;
+    margin-right: 12px;
+    font-size: 0.65rem;
+    padding: 4px 10px;
+  }
+}
