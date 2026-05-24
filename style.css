@@ -375,7 +375,7 @@ ul { list-style: none; }
   position: absolute;
   left: 30%;
   top: 45%;
-  transform: translateY(-50%);
+  transform: none;
   z-index: 3;
   text-align: left;
   margin: 0;
