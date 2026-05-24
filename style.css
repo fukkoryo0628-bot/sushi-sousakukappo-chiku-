@@ -292,6 +292,7 @@ ul { list-style: none; }
   height: 100vh;
   min-height: 640px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
