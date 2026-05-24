@@ -1807,7 +1807,7 @@ ul { list-style: none; }
 /* 768px以下: スマホ対応 */
 @media (max-width: 768px) {
   .hero-title {
-    left: 35%;
+    left: 25%;
     top: 34%;
     transform: translateX(-50%);
     text-align: center;
