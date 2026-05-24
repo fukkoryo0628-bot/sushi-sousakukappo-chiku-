@@ -19,6 +19,6 @@ jobs:
             set ftp:passive-mode yes;
             open ftp://www1124.onamae.ne.jp;
             user '${{ secrets.FTP_USERNAME }}' '${{ secrets.FTP_PASSWORD }}';
-            mirror -R --delete --verbose . /home/r2939690/public_html/;
+            mirror -R --delete --verbose . /;
             bye
           "
