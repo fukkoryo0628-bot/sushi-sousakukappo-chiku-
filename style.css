@@ -1790,19 +1790,11 @@ ul { list-style: none; }
   .footer-nav { gap: 20px; }
 }
 
-/* 1200px以下: 左オフセットを縮小 */
-@media (max-width: 1200px) {
+/* 1000px以下: 左オフセットを縮小 */
+@media (max-width: 1000px) {
   .hero-title {
-    left: calc(26% + 20px);
-    top: calc(45% - 200px);
-  }
-}
-
-/* 900px以下: さらに左寄せ・上調整 */
-@media (max-width: 900px) {
-  .hero-title {
-    left: calc(18% + 10px);
-    top: calc(45% - 170px);
+    left: calc(22% + 10px);
+    top: calc(45% - 190px);
   }
   .hero-content {
     bottom: 14%;
