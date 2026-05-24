@@ -1790,17 +1790,24 @@ ul { list-style: none; }
   .footer-nav { gap: 20px; }
 }
 
-/* 1000px以下: 左オフセットを縮小 */
-@media (max-width: 1000px) {
+/* 769px〜1000px: 半分PCウィンドウ用（スマホは触らない） */
+@media (min-width: 769px) and (max-width: 1000px) {
   .hero-title {
-    left: calc(22% + 10px);
-    top: calc(45% - 190px);
+    left: 50%;
+    top: 28%;
+    transform: translateX(-50%);
+    text-align: center;
   }
   .hero-content {
     bottom: 14%;
+    width: 90vw;
+    max-width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
   }
   .nav-list {
-    gap: 20px;
+    gap: 16px;
   }
 }
 
