@@ -1804,7 +1804,7 @@ ul { list-style: none; }
 /* 900px以下 */
 @media (max-width: 900px) {
   .hero-title {
-    left: 55%;
+    left: 68%;
     top: 25%;
     transform: translateX(-50%);
     text-align: center;
