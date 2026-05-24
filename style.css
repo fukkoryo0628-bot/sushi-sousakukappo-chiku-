@@ -1790,15 +1790,38 @@ ul { list-style: none; }
   .footer-nav { gap: 20px; }
 }
 
-@media (max-width: 768px) {
+/* 1200px以下: 左オフセットを縮小 */
+@media (max-width: 1200px) {
+  .hero-title {
+    left: calc(26% + 20px);
+    top: calc(45% - 200px);
+  }
+}
+
+/* 900px以下: さらに左寄せ・上調整 */
+@media (max-width: 900px) {
+  .hero-title {
+    left: calc(18% + 10px);
+    top: calc(45% - 170px);
+  }
+  .hero-content {
+    bottom: 14%;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+}
+
+/* 600px以下: 中央に寄せてテキスト上に配置 */
+@media (max-width: 600px) {
   .hero-title {
     left: 50%;
-    top: 38%;
-    transform: translate(-50%, -50%);
+    top: 28%;
+    transform: translateX(-50%);
     text-align: center;
   }
   .hero-content {
-    bottom: 12%;
+    bottom: 10%;
   }
 }
 
