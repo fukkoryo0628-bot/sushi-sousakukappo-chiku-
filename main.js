@@ -421,6 +421,8 @@ function applyI18n(lang) {
   if (btn) btn.textContent = langLabels[nextLang];
   currentLang = lang;
   localStorage.setItem('lang', lang);
+  const heroTitle = document.querySelector('.hero-title');
+  if (heroTitle) heroTitle.style.marginLeft = '10%';
 }
 
 applyI18n(currentLang);
