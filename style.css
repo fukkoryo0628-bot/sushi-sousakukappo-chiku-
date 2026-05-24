@@ -1808,7 +1808,7 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .hero-title {
     left: 50%;
-    top: 16%;
+    top: 28%;
     transform: translateX(-50%);
     text-align: center;
     width: auto;
