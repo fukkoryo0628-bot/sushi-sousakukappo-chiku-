@@ -193,12 +193,9 @@ ul { list-style: none; }
 .logo {
   display: flex;
   align-items: center;
-  position: fixed;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
   padding: 20px 0;
   z-index: 101;
+  flex-shrink: 0;
 }
 
 .logo-img {
@@ -1700,11 +1697,8 @@ ul { list-style: none; }
   .header-inner { padding: 16px 20px; }
   .header-right { gap: 0; }
   .logo {
-    position: fixed;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
     padding: 16px 0;
+    flex-shrink: 0;
   }
   .nav {
     position: fixed;
