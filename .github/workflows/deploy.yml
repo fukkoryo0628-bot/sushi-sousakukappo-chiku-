@@ -11,12 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: www1124.onamae.ne.jp
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/r2939690/public_html/
-          protocol: ftp
-          port: 21
+      - name: Deploy via LFTP
+        run: |
+          sudo apt-get install -y lftp
+          lftp -c "
+            set ftp:ssl-allow no;
+            set ftp:passive-mode yes;
+            open ftp://www1124.onamae.ne.jp;
+            user '${{ secrets.FTP_USERNAME }}' '${{ secrets.FTP_PASSWORD }}';
+            mirror -R --delete --verbose . /home/r2939690/public_html/;
+            bye
+          "
