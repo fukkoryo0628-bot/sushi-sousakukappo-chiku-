@@ -184,6 +184,7 @@ ul { list-style: none; }
   padding: 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header-inner::before {
@@ -193,9 +194,12 @@ ul { list-style: none; }
 .logo {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 101;
-  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .logo-img {
@@ -369,7 +373,7 @@ ul { list-style: none; }
 
 .hero-title {
   margin-bottom: 24px;
-  margin-left: 10%;
+  text-align: center;
   opacity: 0;
   animation: fadeUp 1s ease 0.6s forwards;
 }
@@ -1697,8 +1701,11 @@ ul { list-style: none; }
   .header-inner { padding: 16px 20px; }
   .header-right { gap: 0; }
   .logo {
-    padding: 16px 0;
-    flex-shrink: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
   }
   .nav {
     position: fixed;
