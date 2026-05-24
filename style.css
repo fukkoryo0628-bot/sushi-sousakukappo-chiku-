@@ -181,7 +181,8 @@ ul { list-style: none; }
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: relative;
   padding: 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -190,6 +191,9 @@ ul { list-style: none; }
 .logo {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-img {
@@ -198,6 +202,12 @@ ul { list-style: none; }
   transition: opacity var(--transition-fast);
 }
 .logo:hover .logo-img { opacity: 0.8; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 .nav-list {
   display: flex;
@@ -1687,6 +1697,8 @@ ul { list-style: none; }
     right: -100%;
     bottom: 0;
     width: min(320px, 85vw);
+    display: block;
+    justify-content: flex-start;
     background: rgba(13,12,10,0.98);
     backdrop-filter: blur(20px);
     padding: 100px 40px 40px;
