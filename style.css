@@ -350,11 +350,14 @@ ul { list-style: none; }
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
   z-index: 2;
   padding: 0 24px;
-  margin-top: 0;
 }
 
 .hero-en {
@@ -369,8 +372,13 @@ ul { list-style: none; }
 }
 
 .hero-title {
-  margin-bottom: 24px;
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
   text-align: center;
+  margin: 0;
   opacity: 0;
   animation: fadeUp 1s ease 0.6s forwards;
 }
@@ -1780,6 +1788,15 @@ ul { list-style: none; }
   /* フッター */
   .footer { padding: 48px 20px 32px; }
   .footer-nav { gap: 20px; }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    top: 36%;
+  }
+  .hero-content {
+    bottom: 12%;
+  }
 }
 
 @media (max-width: 480px) {
