@@ -215,7 +215,7 @@ function applyI18n(lang) {
   });
   document.getElementById('html-root').lang = lang;
   const btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = lang === 'ja' ? 'EN' : 'JP';
+  if (btn) btn.textContent = lang === 'ja' ? 'English' : '日本語';
   currentLang = lang;
   localStorage.setItem('lang', lang);
 }
