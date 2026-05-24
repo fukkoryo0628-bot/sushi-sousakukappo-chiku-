@@ -1804,16 +1804,54 @@ ul { list-style: none; }
   }
 }
 
-/* 600px以下: 中央に寄せてテキスト上に配置 */
-@media (max-width: 600px) {
+/* 768px以下: スマホ対応 */
+@media (max-width: 768px) {
   .hero-title {
     left: 50%;
-    top: 28%;
+    top: 16%;
     transform: translateX(-50%);
     text-align: center;
+    width: auto;
   }
+
+  .hero-logo-img {
+    width: min(200px, 52vw);
+  }
+
   .hero-content {
-    bottom: 10%;
+    top: 54%;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 90vw;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .hero-sub {
+    font-size: clamp(0.78rem, 3.2vw, 0.9rem);
+    line-height: 2.2;
+    letter-spacing: 0.06em;
+    margin-bottom: 32px;
+  }
+
+  .hero-en {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
   }
 }
 
