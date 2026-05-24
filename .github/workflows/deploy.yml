@@ -19,6 +19,6 @@ jobs:
             set ftp:passive-mode yes;
             open ftp://www1124.onamae.ne.jp;
             user '${{ secrets.FTP_USERNAME }}' '${{ secrets.FTP_PASSWORD }}';
-            mirror -R --delete --verbose . /;
+            mirror -R --delete --verbose --exclude='^\.git' --exclude='^\.github' . /sushi-sousakukappo-chiku.com/;
             bye
           "
