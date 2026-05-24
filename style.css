@@ -373,7 +373,7 @@ ul { list-style: none; }
 
 .hero-title {
   position: absolute;
-  left: calc(30% + 100px);
+  left: calc(30% + 180px);
   top: calc(45% - 320px);
   transform: none;
   z-index: 3;
