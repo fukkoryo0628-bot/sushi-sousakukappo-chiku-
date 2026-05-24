@@ -184,7 +184,6 @@ ul { list-style: none; }
   padding: 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 
 .header-inner::before {
@@ -194,12 +193,9 @@ ul { list-style: none; }
 .logo {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  flex-shrink: 0;
+  padding: 20px 0;
   z-index: 101;
-  white-space: nowrap;
 }
 
 .logo-img {
@@ -1702,11 +1698,8 @@ ul { list-style: none; }
   .header-inner { padding: 16px 20px; }
   .header-right { gap: 0; }
   .logo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 16px 0;
   }
   .nav {
     position: fixed;
