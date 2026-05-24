@@ -1790,11 +1790,22 @@ ul { list-style: none; }
   .footer-nav { gap: 20px; }
 }
 
-/* 769px〜1000px: 半分PCウィンドウ用（スマホは触らない） */
-@media (min-width: 769px) and (max-width: 1000px) {
+/* 1200px以下 */
+@media (max-width: 1200px) {
   .hero-title {
-    left: 62%;
-    top: 28%;
+    left: calc(28% + 80px);
+    top: calc(45% - 210px);
+  }
+  .nav-list {
+    gap: 24px;
+  }
+}
+
+/* 900px以下 */
+@media (max-width: 900px) {
+  .hero-title {
+    left: 55%;
+    top: 25%;
     transform: translateX(-50%);
     text-align: center;
   }
