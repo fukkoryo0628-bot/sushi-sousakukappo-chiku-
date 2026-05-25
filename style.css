@@ -1920,3 +1920,127 @@ ul { list-style: none; }
     padding: 4px 10px;
   }
 }
+
+/* =============================================
+   追加改善スタイル
+   ============================================= */
+
+/* ナビ日本語フォント */
+.nav-jp {
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+/* ヒーロー：オーバーレイ強化（モバイル文字可読性） */
+@media (max-width: 768px) {
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(13,12,10,0.3) 0%,
+      rgba(13,12,10,0.45) 45%,
+      rgba(13,12,10,0.92) 100%
+    );
+  }
+}
+
+/* ヒーロー：場所・ジャンルバッジ */
+.hero-badge {
+  font-family: var(--font-serif);
+  font-size: clamp(0.72rem, 2.5vw, 0.85rem);
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.45);
+  display: inline-block;
+  padding: 6px 18px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.6s forwards;
+}
+
+/* 店舗情報 アクションボタン */
+.info-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.info-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(245,240,232,0.85);
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  white-space: nowrap;
+}
+.info-action-btn:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--cream);
+  border-color: rgba(255,255,255,0.4);
+}
+.info-action-tel  { border-color: rgba(201,168,76,0.4); color: var(--gold-light, #c9a96e); }
+.info-action-tel:hover { background: rgba(201,168,76,0.12); border-color: var(--gold); }
+.info-action-map  { }
+.info-action-ig   { }
+
+@media (max-width: 768px) {
+  .info-actions { gap: 10px; }
+  .info-action-btn { padding: 11px 16px; font-size: 0.8rem; flex: 1; justify-content: center; }
+}
+
+/* フローティング予約ボタン */
+.float-reserve {
+  position: fixed;
+  right: 20px;
+  bottom: 70px; /* announce-bar の上 */
+  z-index: 200;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s, transform 0.4s;
+  pointer-events: none;
+}
+.float-reserve.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.float-reserve-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold, #c9a84c);
+  color: #0d0c0a;
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  padding: 12px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  transition: background var(--transition-fast), transform 0.2s;
+}
+.float-reserve-btn:hover {
+  background: #d9b85c;
+  transform: translateY(-2px);
+}
+
+/* モバイル全体フォント・行間改善 */
+@media (max-width: 768px) {
+  body { font-size: 15px; line-height: 1.9; }
+
+  .section-title {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+    line-height: 1.7;
+  }
+  .concept-body {
+    font-size: 0.95rem;
+    line-height: 2.1;
+  }
+  .info-list dt { font-size: 0.8rem; }
+  .info-list dd { font-size: 0.9rem; line-height: 1.9; }
+  .course-price { font-size: clamp(1.3rem, 5vw, 1.6rem); }
+  .reserve-note-list li { font-size: 0.85rem; line-height: 1.95; }
+}

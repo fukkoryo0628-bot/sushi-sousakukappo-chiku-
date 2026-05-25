@@ -602,3 +602,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+// フローティング予約ボタン（スクロール200px以降に表示）
+const floatReserve = document.getElementById('float-reserve');
+if (floatReserve) {
+  const toggleFloat = () => {
+    floatReserve.classList.toggle('visible', window.scrollY > 200);
+  };
+  window.addEventListener('scroll', toggleFloat, { passive: true });
+  toggleFloat();
+}
