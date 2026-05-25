@@ -206,6 +206,14 @@ ul { list-style: none; }
 }
 .logo:hover .logo-img { opacity: 0.8; }
 
+.nav-instagram {
+  display: flex;
+  align-items: center;
+  opacity: 0.75;
+  transition: opacity var(--transition-fast);
+}
+.nav-instagram:hover { opacity: 1; }
+
 .header-right {
   flex: 1;
   display: flex;
