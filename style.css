@@ -202,7 +202,7 @@ ul { list-style: none; }
   height: 68px;
   width: auto;
   transition: opacity var(--transition-fast);
-  filter: drop-shadow(0 0 4px rgba(255,255,255,0.85)) drop-shadow(0 0 8px rgba(255,255,255,0.6));
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.6)) drop-shadow(0 0 8px rgba(0,0,0,0.4));
 }
 .logo:hover .logo-img { opacity: 0.8; }
 
