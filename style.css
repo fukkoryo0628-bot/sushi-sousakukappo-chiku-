@@ -202,6 +202,7 @@ ul { list-style: none; }
   height: 68px;
   width: auto;
   transition: opacity var(--transition-fast);
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.85)) drop-shadow(0 0 8px rgba(255,255,255,0.6));
 }
 .logo:hover .logo-img { opacity: 0.8; }
 
