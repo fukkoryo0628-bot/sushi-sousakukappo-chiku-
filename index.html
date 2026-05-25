@@ -108,8 +108,8 @@
         <nav class="nav" id="nav">
           <ul class="nav-list">
             <li><a href="#" class="nav-link nav-jp">ホーム</a></li>
-            <li><a href="#omakase" class="nav-link nav-jp">お品書き</a></li>
-            <li><a href="#menu" class="nav-link nav-jp">お飲み物</a></li>
+            <li><a href="#concept" class="nav-link nav-jp">コンセプト</a></li>
+            <li><a href="#obukuro" class="nav-link nav-jp">お品書き</a></li>
             <li><a href="#info" class="nav-link nav-jp">店舗情報</a></li>
             <li><a href="#reserve" class="nav-link nav-reserve nav-jp">ご予約</a></li>
             <li>
@@ -212,24 +212,48 @@
     </div>
   </section>
 
-  <!-- メニュー -->
-  <section class="menu" id="menu">
+  <!-- お品書き（ハブ） -->
+  <section class="menu" id="obukuro">
     <div class="menu-bg"></div>
     <div class="container">
       <div class="section-header">
         <div class="section-label light">MENU</div>
-        <h2 class="section-title light" data-i18n="menu-title">メニュー</h2>
+        <h2 class="section-title light">お品書き</h2>
       </div>
-      <div class="menu-grid menu-grid-2">
+      <nav class="obukuro-nav" aria-label="お品書きカテゴリー">
+        <a href="#alacarte" class="obukuro-nav-item">
+          <span class="obukuro-nav-en">À la carte</span>
+          <span class="obukuro-nav-jp">アラカルト</span>
+        </a>
+        <a href="#lunch" class="obukuro-nav-item">
+          <span class="obukuro-nav-en">Lunch</span>
+          <span class="obukuro-nav-jp">ランチ</span>
+        </a>
+        <a href="#omakase" class="obukuro-nav-item">
+          <span class="obukuro-nav-en">Dinner</span>
+          <span class="obukuro-nav-jp">ディナー</span>
+        </a>
+        <a href="#takeout" class="obukuro-nav-item">
+          <span class="obukuro-nav-en">Take-out</span>
+          <span class="obukuro-nav-jp">お土産</span>
+        </a>
+      </nav>
+    </div>
+  </section>
 
-        <!-- アラカルト -->
+  <!-- アラカルト -->
+  <section class="menu menu-sub" id="alacarte">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label light">À LA CARTE</div>
+        <h2 class="section-title light">アラカルト</h2>
+      </div>
+      <div class="menu-grid menu-grid-1">
         <div class="menu-card menu-card-large">
           <div class="menu-card-img">
             <img src="IMG_0190.jpg" alt="福岡・糸島の創作和食・季節の酒肴" loading="lazy">
           </div>
           <div class="menu-card-body">
-            <span class="menu-category">À la carte</span>
-            <h3 class="menu-item-name" data-i18n="menu-alacarte-name">アラカルト</h3>
             <p class="menu-item-desc" data-i18n="menu-alacarte-desc">赤酢のシャリで仕立てる旬の一貫。<br>握り・酒肴・巻物・お椀・甘味など、<br>お好みのものをお選びいただけます。</p>
             <ul class="menu-item-list">
               <li><span data-i18n="menu-alacarte-l1-label">握り</span><span data-i18n="menu-alacarte-l1-desc">赤酢のシャリで仕立てる旬の一貫</span></li>
@@ -241,26 +265,6 @@
             <p class="menu-item-note" data-i18n="menu-alacarte-note">※ 価格はメニュー表をご参照ください</p>
           </div>
         </div>
-
-        <!-- お土産 -->
-        <div class="menu-card menu-card-large">
-          <div class="menu-card-body">
-            <span class="menu-category">Take-out</span>
-            <h3 class="menu-item-name" data-i18n="menu-takeout-name">お持ち帰り</h3>
-            <p class="menu-item-desc" data-i18n="menu-takeout-desc">ご自宅でのお食事や、<br>法事・お祝いなどのお集まりにも。<br>前日までのご予約をお願いいたします。</p>
-            <ul class="menu-item-list">
-              <li><span data-i18n="menu-takeout-l1-label">折詰</span><span data-i18n="menu-takeout-l1-desc">旬の握り・ちらし寿司</span></li>
-              <li><span data-i18n="menu-takeout-l2-label">巻物</span><span data-i18n="menu-takeout-l2-desc">太巻き・細巻き 各種</span></li>
-              <li><span data-i18n="menu-takeout-l3-label">酒肴</span><span data-i18n="menu-takeout-l3-desc">季節の日替わり料理</span></li>
-              <li><span data-i18n="menu-takeout-l4-label">お集まり</span><span data-i18n="menu-takeout-l4-desc">法事・お祝い・慶事対応可</span></li>
-            </ul>
-            <p class="menu-item-note" data-i18n="menu-takeout-note">※ 前日までのご予約をお願いいたします</p>
-          </div>
-          <div class="menu-card-img">
-            <img src="IMG_8109.JPG" alt="お持ち帰り折詰" loading="lazy">
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -413,6 +417,33 @@
     </div>
   </section>
 
+  <!-- お土産 -->
+  <section class="menu menu-sub" id="takeout">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label light">TAKE-OUT</div>
+        <h2 class="section-title light">お土産</h2>
+      </div>
+      <div class="menu-grid menu-grid-1">
+        <div class="menu-card menu-card-large">
+          <div class="menu-card-body">
+            <p class="menu-item-desc" data-i18n="menu-takeout-desc">ご自宅でのお食事や、<br>法事・お祝いなどのお集まりにも。<br>前日までのご予約をお願いいたします。</p>
+            <ul class="menu-item-list">
+              <li><span data-i18n="menu-takeout-l1-label">折詰</span><span data-i18n="menu-takeout-l1-desc">旬の握り・ちらし寿司</span></li>
+              <li><span data-i18n="menu-takeout-l2-label">巻物</span><span data-i18n="menu-takeout-l2-desc">太巻き・細巻き 各種</span></li>
+              <li><span data-i18n="menu-takeout-l3-label">酒肴</span><span data-i18n="menu-takeout-l3-desc">季節の日替わり料理</span></li>
+              <li><span data-i18n="menu-takeout-l4-label">お集まり</span><span data-i18n="menu-takeout-l4-desc">法事・お祝い・慶事対応可</span></li>
+            </ul>
+            <p class="menu-item-note" data-i18n="menu-takeout-note">※ 前日までのご予約をお願いいたします</p>
+          </div>
+          <div class="menu-card-img">
+            <img src="IMG_8109.JPG" alt="お持ち帰り折詰" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 店舗情報 -->
   <section class="info" id="info">
     <div class="info-bg"></div>
@@ -535,8 +566,8 @@
       </div>
       <nav class="footer-nav">
         <a href="#">ホーム</a>
-        <a href="#omakase">お品書き</a>
-        <a href="#menu">お飲み物</a>
+        <a href="#concept">コンセプト</a>
+        <a href="#obukuro">お品書き</a>
         <a href="#info">店舗情報</a>
         <a href="#reserve">ご予約</a>
       </nav>

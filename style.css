@@ -1925,6 +1925,53 @@ ul { list-style: none; }
    追加改善スタイル
    ============================================= */
 
+/* お品書きサブナビ */
+.obukuro-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+.obukuro-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 16px;
+  border: 1px solid rgba(201,168,76,0.3);
+  text-align: center;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+.obukuro-nav-item:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: rgba(201,168,76,0.7);
+}
+.obukuro-nav-en {
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+}
+.obukuro-nav-jp {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--cream);
+}
+@media (max-width: 768px) {
+  .obukuro-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .obukuro-nav-item { padding: 22px 12px; }
+  .obukuro-nav-jp { font-size: 0.95rem; }
+}
+
+/* アラカルト・お土産サブセクション */
+.menu-sub { padding: 64px 0; }
+.menu-grid-1 { max-width: 680px; margin: 0 auto; }
+
 /* ナビ日本語フォント */
 .nav-jp {
   font-family: var(--font-serif);
