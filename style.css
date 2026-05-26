@@ -842,13 +842,14 @@ ul { list-style: none; }
 
 .menu-card-large .menu-card-img {
   width: 360px;
-  height: auto;
+  min-height: 300px;
   flex-shrink: 0;
 }
 
 .menu-card-large .menu-card-body {
   padding: 40px 36px;
   flex: 1;
+  min-width: 0;
 }
 
 .menu-item-list {
@@ -871,11 +872,16 @@ ul { list-style: none; }
 }
 .menu-item-list li:last-child { border-bottom: none; padding-bottom: 0; }
 
-.menu-item-list li span {
+.menu-item-list li span:first-child {
   color: var(--gold);
   font-size: 0.8rem;
   min-width: 44px;
   flex-shrink: 0;
+}
+.menu-item-list li span:last-child {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
 }
 
 .menu-item-note {
