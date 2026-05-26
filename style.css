@@ -1960,8 +1960,11 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 6px;
+  -webkit-appearance: none;
+  appearance: none;
   background: transparent;
   border: 1px solid rgba(201, 169, 110, 0.6);
+  border-radius: 0;
   color: var(--gold-light, #c9a96e);
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.7rem;
@@ -2002,8 +2005,11 @@ ul { list-style: none; }
 .lang-menu li button {
   display: block;
   width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
   background: transparent;
   border: none;
+  border-radius: 0;
   color: rgba(245, 240, 232, 0.75);
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.75rem;
@@ -2012,6 +2018,7 @@ ul { list-style: none; }
   cursor: pointer;
   text-align: left;
   transition: background 0.15s, color 0.15s;
+  box-sizing: border-box;
 }
 .lang-menu li button:hover,
 .lang-menu li button.active {
@@ -2022,7 +2029,7 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .lang-dropdown {
     margin-left: 0;
-    margin-right: 12px;
+    margin-right: 8px;
   }
   .lang-toggle {
     font-size: 0.65rem;
@@ -2030,6 +2037,8 @@ ul { list-style: none; }
   }
   .lang-menu {
     right: 0;
+    min-width: 110px;
+    z-index: 9997;
   }
 }
 
