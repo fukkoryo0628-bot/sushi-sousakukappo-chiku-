@@ -1748,6 +1748,13 @@ ul { list-style: none; }
   .logo-img {
     height: 76px;
   }
+  /* スクロール時のヘッダーbackdrop-filterを無効化
+     backdrop-filterが親にあるとposition:fixedの子が親基準になるため */
+  .header.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .nav {
     position: fixed;
     top: 0;
