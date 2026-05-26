@@ -1,4 +1,4 @@
-name: FTP Deploy
+name: Deploy to onamae.com
 
 on:
   push:
@@ -8,17 +8,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy via LFTP
-        run: |
-          sudo apt-get install -y lftp
-          lftp -c "
-            set ftp:ssl-allow no;
-            set ftp:passive-mode yes;
-            open ftp://www1124.onamae.ne.jp;
-            user '${{ secrets.FTP_USERNAME }}' '${{ secrets.FTP_PASSWORD }}';
-            mirror -R --delete --verbose --exclude='^\.git' --exclude='^\.github' . /sushi-sousakukappo-chiku.com/;
-            bye
-          "
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/README.md
+            **/.DS_Store
+            **/CNAME
