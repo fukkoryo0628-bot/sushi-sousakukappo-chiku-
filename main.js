@@ -439,19 +439,26 @@ window.addEventListener('scroll', () => {
 // ハンバーガーメニュー
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
+const navOverlay = document.getElementById('nav-overlay');
+
+function closeNav() {
+  hamburger.classList.remove('active');
+  nav.classList.remove('open');
+  navOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  nav.classList.toggle('open');
-  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  const isOpen = nav.classList.toggle('open');
+  hamburger.classList.toggle('active', isOpen);
+  navOverlay.classList.toggle('active', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
+navOverlay.addEventListener('click', closeNav);
+
 nav.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    nav.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+  link.addEventListener('click', closeNav);
 });
 
 // スクロールアニメーション
