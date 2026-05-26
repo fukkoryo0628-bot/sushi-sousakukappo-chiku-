@@ -1121,6 +1121,13 @@ ul { list-style: none; }
   width: 100%;
 }
 
+#lunch .omakase-courses {
+  grid-template-columns: 1fr;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .course-photos {
   display: grid;
   grid-column: 1 / -1;
