@@ -2002,26 +2002,22 @@ ul { list-style: none; }
 .lang-dropdown.open .lang-menu {
   display: block;
 }
-.lang-menu li button {
+.lang-menu li a.lang-option {
   display: block;
   width: 100%;
-  -webkit-appearance: none;
-  appearance: none;
   background: transparent;
-  border: none;
-  border-radius: 0;
   color: rgba(245, 240, 232, 0.75);
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   padding: 10px 16px;
   cursor: pointer;
-  text-align: left;
+  text-decoration: none;
   transition: background 0.15s, color 0.15s;
   box-sizing: border-box;
 }
-.lang-menu li button:hover,
-.lang-menu li button.active {
+.lang-menu li a.lang-option:hover,
+.lang-menu li a.lang-option.active {
   background: rgba(201, 169, 110, 0.12);
   color: var(--gold-light, #c9a96e);
 }

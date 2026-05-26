@@ -417,8 +417,8 @@ function applyI18n(lang) {
   document.getElementById('html-root').lang = langAttr[lang] || lang;
   const current = document.getElementById('lang-current');
   if (current) current.textContent = langLabels[lang];
-  document.querySelectorAll('.lang-menu li button').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+  document.querySelectorAll('.lang-option').forEach(a => {
+    a.classList.toggle('active', a.dataset.lang === lang);
   });
   currentLang = lang;
   localStorage.setItem('lang', lang);
@@ -437,9 +437,10 @@ langToggle.addEventListener('click', (e) => {
 });
 
 // 言語選択
-document.querySelectorAll('.lang-menu li button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    applyI18n(btn.dataset.lang);
+document.querySelectorAll('.lang-option').forEach(a => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    applyI18n(a.dataset.lang);
     langDropdown.classList.remove('open');
     langToggle.setAttribute('aria-expanded', 'false');
   });
