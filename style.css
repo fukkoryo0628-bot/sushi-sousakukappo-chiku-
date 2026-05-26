@@ -836,11 +836,18 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
-.menu-card-large .menu-card-body {
-  padding: 40px 36px;
+.menu-card-large {
+  flex-direction: row;
 }
 
-.menu-card-large .menu-card-body:first-child {
+.menu-card-large .menu-card-img {
+  width: 360px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.menu-card-large .menu-card-body {
+  padding: 40px 36px;
   flex: 1;
 }
 
@@ -1771,6 +1778,8 @@ ul { list-style: none; }
   .menu { padding: 80px 0; }
   .menu-grid { grid-template-columns: 1fr; gap: 16px; }
   .menu-card-img { height: 120px; }
+  .menu-card-large { flex-direction: column; }
+  .menu-card-large .menu-card-img { width: 100%; height: 220px; }
 
   /* おまかせ */
   .omakase { padding: 80px 0; }
@@ -1970,7 +1979,7 @@ ul { list-style: none; }
 
 /* アラカルト・お土産サブセクション */
 .menu-sub { padding: 64px 0; }
-.menu-grid-1 { max-width: 680px; margin: 0 auto; }
+.menu-grid-1 { max-width: 960px; margin: 0 auto; grid-template-columns: 1fr; }
 
 /* ナビ日本語フォント */
 .nav-jp {
