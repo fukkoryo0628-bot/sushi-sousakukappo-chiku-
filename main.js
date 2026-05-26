@@ -402,9 +402,8 @@ const i18nData = {
   }
 };
 
-const langCycle = ['ja', 'en', 'zh-cn', 'zh-tw'];
 const langLabels = { ja: '日本語', en: 'English', 'zh-cn': '中文', 'zh-tw': '繁體中文' };
-const langAttr   = { ja: 'ja',    en: 'en',     'zh-cn': 'zh-Hans', 'zh-tw': 'zh-Hant' };
+const langAttr   = { ja: 'ja', en: 'en', 'zh-cn': 'zh-Hans', 'zh-tw': 'zh-Hant' };
 
 let currentLang = localStorage.getItem('lang') || 'ja';
 
@@ -416,18 +415,40 @@ function applyI18n(lang) {
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
   document.getElementById('html-root').lang = langAttr[lang] || lang;
-  const btn = document.getElementById('lang-toggle');
-  const nextLang = langCycle[(langCycle.indexOf(lang) + 1) % langCycle.length];
-  if (btn) btn.textContent = langLabels[nextLang];
+  const current = document.getElementById('lang-current');
+  if (current) current.textContent = langLabels[lang];
+  document.querySelectorAll('.lang-menu li button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
   currentLang = lang;
   localStorage.setItem('lang', lang);
 }
 
 applyI18n(currentLang);
 
-document.getElementById('lang-toggle').addEventListener('click', () => {
-  const nextLang = langCycle[(langCycle.indexOf(currentLang) + 1) % langCycle.length];
-  applyI18n(nextLang);
+// ドロップダウン開閉
+const langDropdown = document.getElementById('lang-dropdown');
+const langToggle = document.getElementById('lang-toggle');
+
+langToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = langDropdown.classList.toggle('open');
+  langToggle.setAttribute('aria-expanded', isOpen);
+});
+
+// 言語選択
+document.querySelectorAll('.lang-menu li button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    applyI18n(btn.dataset.lang);
+    langDropdown.classList.remove('open');
+    langToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// 外クリックで閉じる
+document.addEventListener('click', () => {
+  langDropdown.classList.remove('open');
+  langToggle.setAttribute('aria-expanded', 'false');
 });
 
 // ヘッダースクロール制御
