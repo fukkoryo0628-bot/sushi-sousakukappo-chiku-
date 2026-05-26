@@ -1780,6 +1780,18 @@ ul { list-style: none; }
     z-index: 299;
   }
   .nav-overlay.active { display: block; }
+
+  /* メニューopen中はheaderのbackdrop-filterをCSSでも強制無効化 */
+  body.menu-open .header,
+  body.menu-open .header.scrolled {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  body.menu-open .nav {
+    background: #0d0c0a !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
   .nav-list {
     flex-direction: column;
     align-items: flex-start;

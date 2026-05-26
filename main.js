@@ -440,19 +440,31 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 const navOverlay = document.getElementById('nav-overlay');
+const header = document.getElementById('header');
+
+function openNav() {
+  hamburger.classList.add('active');
+  nav.classList.add('open');
+  navOverlay.classList.add('active');
+  document.body.classList.add('menu-open');
+  document.body.style.overflow = 'hidden';
+  // backdrop-filterをinlineで強制除去（CSS仕様でfixed子要素の基準がズレるため）
+  header.style.backdropFilter = 'none';
+  header.style.webkitBackdropFilter = 'none';
+}
 
 function closeNav() {
   hamburger.classList.remove('active');
   nav.classList.remove('open');
   navOverlay.classList.remove('active');
+  document.body.classList.remove('menu-open');
   document.body.style.overflow = '';
+  header.style.backdropFilter = '';
+  header.style.webkitBackdropFilter = '';
 }
 
 hamburger.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  hamburger.classList.toggle('active', isOpen);
-  navOverlay.classList.toggle('active', isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
+  nav.classList.contains('open') ? closeNav() : openNav();
 });
 
 navOverlay.addEventListener('click', closeNav);
