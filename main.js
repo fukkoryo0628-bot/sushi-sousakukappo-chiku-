@@ -103,7 +103,7 @@ const i18nData = {
     'reserve-note-4': '貸切でのご利用も承っております。お気軽にご相談ください。',
     'reserve-note-5': 'お子様のご来店につきましては、事前にご相談をお願いいたします。',
     'footer-address': '〒819-1116 福岡県糸島市前原中央2-3-39',
-    'announce': '2026年7月中旬オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします',
+    'announce': '2026年7月24日オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします',
   },
   en: {
     'hero-sub': 'The only Edomae sushi in Itoshima.<br>Seasonal fish from across Japan, the four seasons of Fukuoka\'s Itoshima.',
@@ -204,7 +204,7 @@ const i18nData = {
     'reserve-note-4': 'Private dining events are available. Please feel free to inquire.',
     'reserve-note-5': 'Please consult us in advance regarding dining with children.',
     'footer-address': '2-3-39 Maebaru Chuo, Itoshima, Fukuoka 819-1116, Japan',
-    'announce': 'Opening mid-July 2026 &nbsp;|&nbsp; Details to be announced on Instagram',
+    'announce': 'Opening July 24, 2026 &nbsp;|&nbsp; Details to be announced on Instagram',
   },
   'zh-cn': {
     'hero-sub': '糸岛唯一的江户前寿司和创意和食。<br>来自全国各地的时令鱼和福冈·糸岛的四季风味',
@@ -305,7 +305,7 @@ const i18nData = {
     'reserve-note-4': '可接受包场预约，欢迎咨询。',
     'reserve-note-5': '携带儿童用餐请提前咨询。',
     'footer-address': '〒819-1116 福冈县糸岛市前原中央2-3-39',
-    'announce': '预计2026年7月中旬开业 &nbsp;|&nbsp; 详情将在Instagram公布',
+    'announce': '预计2026年7月24日开业 &nbsp;|&nbsp; 详情将在Instagram公布',
   },
   'zh-tw': {
     'hero-sub': '糸島唯一的江戶前壽司和創意和食。<br>來自全國各地的時令魚和福岡·糸島的四季風味',
@@ -406,7 +406,7 @@ const i18nData = {
     'reserve-note-4': '可接受包場預約，歡迎諮詢。',
     'reserve-note-5': '攜帶兒童用餐請提前諮詢。',
     'footer-address': '〒819-1116 福岡縣糸島市前原中央2-3-39',
-    'announce': '預計2026年7月中旬開業 &nbsp;|&nbsp; 詳情將在Instagram公布',
+    'announce': '預計2026年7月24日開業 &nbsp;|&nbsp; 詳情將在Instagram公布',
   }
 };
 
