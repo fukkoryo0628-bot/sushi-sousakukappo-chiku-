@@ -1611,8 +1611,16 @@ ul { list-style: none; }
   }
 
   .ig-cta-btn {
-    padding: 13px 28px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 14px 20px;
     font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .ig-follow-hint {
+    text-align: center;
   }
 }
 
