@@ -1525,6 +1525,20 @@ ul { list-style: none; }
 
 behold-widget {
   display: block;
+  /* PC: 3列、gap 3px */
+  --behold-columns: 3;
+  --behold-gap: 3px;
+}
+
+@media (max-width: 768px) {
+  .ig-widget-wrap {
+    max-width: 100%;
+  }
+
+  behold-widget {
+    /* スマホ: 2列 */
+    --behold-columns: 2;
+  }
 }
 
 /* CTA エリア */
