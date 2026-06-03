@@ -1498,6 +1498,125 @@ ul { list-style: none; }
 }
 
 /* =============================================
+   Instagram
+   ============================================= */
+
+.ig-section {
+  padding: 100px 0;
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.ig-section-title {
+  font-family: var(--font-en);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+}
+
+/* 3列 × 2行 グリッド */
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+
+.ig-thumb {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: block;
+}
+
+.ig-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.88);
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+              filter 0.4s ease;
+}
+
+.ig-thumb:hover img {
+  transform: scale(1.07);
+  filter: brightness(0.65);
+}
+
+/* ホバー時に Instagram アイコンをフェードイン */
+.ig-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.ig-thumb:hover .ig-thumb-overlay {
+  opacity: 1;
+}
+
+.ig-thumb-overlay svg {
+  color: rgba(255, 255, 255, 0.92);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+}
+
+/* CTA エリア */
+.ig-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.ig-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 40px;
+}
+
+.ig-cta-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.ig-cta-btn:hover svg {
+  stroke: var(--gold);
+}
+
+.ig-follow-hint {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: var(--text-light);
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .ig-section {
+    padding: 72px 0;
+  }
+
+  .ig-grid {
+    max-width: 100%;
+    gap: 2px;
+  }
+
+  .ig-cta-btn {
+    padding: 13px 28px;
+    font-size: 0.78rem;
+  }
+}
+
+/* =============================================
    予約
    ============================================= */
 
