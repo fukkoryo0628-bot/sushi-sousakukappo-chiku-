@@ -1619,6 +1619,14 @@ behold-widget {
   font-family: var(--font-sans);
   font-style: normal;
   letter-spacing: 0.1em;
+  line-height: 1.6;
+}
+.tel-btn small {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  font-weight: 300;
 }
 
 .reserve-hours {
@@ -1741,6 +1749,24 @@ behold-widget {
 .sns-link:hover {
   border-color: var(--gold);
   color: var(--gold);
+}
+
+.footer-tel {
+  font-family: var(--font-en);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.footer-tel a {
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+.footer-tel a:hover { color: var(--gold-light); }
+.footer-tel small {
+  font-size: 0.7rem;
+  margin-left: 6px;
+  color: rgba(255,255,255,0.3);
 }
 
 .footer-address {
