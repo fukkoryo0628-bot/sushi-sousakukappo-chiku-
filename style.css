@@ -1482,6 +1482,11 @@ ul { list-style: none; }
   line-height: 2.1;
   letter-spacing: 0.08em;
 }
+.info-row dd small {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.06em;
+}
 .info-row dd a {
   color: var(--gold-light);
   transition: color var(--transition-fast);
