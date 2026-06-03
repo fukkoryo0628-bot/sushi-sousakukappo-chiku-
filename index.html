@@ -162,6 +162,35 @@
     </div>
   </section>
 
+  <!-- お知らせ・最新情報（Instagram / Behold） -->
+  <section class="ig-section" id="instagram">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">INSTAGRAM</div>
+        <h2 class="section-title">お知らせ・最新情報</h2>
+        <p class="section-desc">日々の仕入れ、旬の料理、季節のうつろいを発信しています。</p>
+      </div>
+      <div class="ig-widget-wrap">
+        <behold-widget feed-id="eb8zZQCMQM4cR9i8sOTf"></behold-widget>
+      </div>
+      <div class="ig-cta">
+        <a href="https://www.instagram.com/sushi.sousakukappou_chiku"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary ig-cta-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagramで最新投稿を見る
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- お知らせ -->
   <section class="news" id="news">
     <div class="container">
@@ -600,6 +629,7 @@
       </div>
       <nav class="footer-nav">
         <a href="#">ホーム</a>
+        <a href="#instagram">お知らせ</a>
         <a href="#concept">コンセプト</a>
         <a href="#obukuro">お品書き</a>
         <a href="#info">店舗情報</a>
@@ -655,5 +685,6 @@
   </nav>
   <div class="nav-overlay" id="nav-overlay"></div>
   <script src="main.js?v=2"></script>
+  <script src="https://w.behold.so/widget.js" type="module"></script>
 </body>
 </html>

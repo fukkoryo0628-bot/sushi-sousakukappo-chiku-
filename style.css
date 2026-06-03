@@ -1498,6 +1498,57 @@ ul { list-style: none; }
 }
 
 /* =============================================
+   Instagram / お知らせ・最新情報
+   ============================================= */
+
+.ig-section {
+  padding: 100px 0;
+  background: var(--black);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Behold ウィジェットラッパー */
+.ig-widget-wrap {
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+
+behold-widget {
+  display: block;
+}
+
+/* CTA ボタンエリア */
+.ig-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* btn-primary を流用しつつアイコンを横並びに */
+.ig-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .ig-section {
+    padding: 72px 0;
+  }
+
+  .ig-widget-wrap {
+    max-width: 100%;
+  }
+
+  .ig-cta-btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+
+/* =============================================
    予約
    ============================================= */
 
