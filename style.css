@@ -318,6 +318,7 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background-image: url('hero-bg.jpg');
+  background-image: image-set(url('hero-bg.webp') type('image/webp'), url('hero-bg.jpg') type('image/jpeg'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
