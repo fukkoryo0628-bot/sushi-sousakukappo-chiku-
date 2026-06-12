@@ -1825,7 +1825,6 @@ behold-widget {
 
 @media (max-width: 1024px) {
   .concept-inner { gap: 48px; }
-  .omakase-courses { grid-template-columns: 1fr; gap: 16px; }
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1952,22 +1951,26 @@ behold-widget {
   }
 }
 
-/* 900px以下 */
-@media (max-width: 900px) {
+/* 900px以下：ヒーロー位置を中央寄りに微調整（PC表示維持） */
+@media (max-width: 900px) and (min-width: 769px) {
   .hero-title {
-    left: 80%;
-    top: 25%;
+    left: 50%;
+    top: 18%;
     transform: translateX(-50%);
     text-align: center;
   }
   .hero-content {
-    bottom: 14%;
+    bottom: 12%;
     width: 90vw;
     max-width: 90vw;
     left: 50%;
     transform: translateX(-50%);
     top: auto;
   }
+}
+
+/* 900px以下：ナビ間隔のみ調整（ヒーローレイアウトはPC維持） */
+@media (max-width: 900px) {
   .nav-list {
     gap: 16px;
   }
