@@ -1133,11 +1133,26 @@ ul { list-style: none; }
   width: 100%;
 }
 
-#lunch .omakase-courses {
-  grid-template-columns: 1fr;
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
+.lunch-card-horizontal {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lunch-card-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 45%;
+  flex-shrink: 0;
+  min-height: 380px;
+}
+
+.lunch-card-horizontal .course-card {
+  flex: 1;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.08);
 }
 
 .course-photos {
@@ -1921,7 +1936,9 @@ behold-widget {
   .course-card { padding: 32px 24px; }
   .omakase-courses { grid-template-columns: 1fr; }
   .course-photos { grid-column: 1; grid-template-columns: repeat(2, 1fr); grid-template-rows: 160px 160px; height: auto; }
-  .course-photos-lunch { grid-template-columns: repeat(2, 1fr); height: auto; grid-template-rows: 200px; }
+  .lunch-card-horizontal { flex-direction: column; }
+  .lunch-card-photos { width: 100%; min-height: 240px; grid-template-columns: 1fr 1fr; }
+  .lunch-card-horizontal .course-card { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); }
 
   /* 店舗情報 */
   .info { padding: 80px 0; }
