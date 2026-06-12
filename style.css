@@ -1143,10 +1143,15 @@ ul { list-style: none; }
 .course-photos {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 8px;
   height: 220px;
+}
+.course-photos-lunch {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  height: 280px;
 }
 
 .course-photo-item {
@@ -1915,7 +1920,8 @@ behold-widget {
   .section-header { margin-bottom: 40px; }
   .course-card { padding: 32px 24px; }
   .omakase-courses { grid-template-columns: 1fr; }
-  .course-photos { grid-column: 1; grid-template-columns: repeat(3, 1fr); grid-template-rows: 160px 160px; height: auto; }
+  .course-photos { grid-column: 1; grid-template-columns: repeat(2, 1fr); grid-template-rows: 160px 160px; height: auto; }
+  .course-photos-lunch { grid-template-columns: repeat(2, 1fr); height: auto; grid-template-rows: 200px; }
 
   /* 店舗情報 */
   .info { padding: 80px 0; }
