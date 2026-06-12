@@ -1139,6 +1139,7 @@ ul { list-style: none; }
   overflow: hidden;
   max-width: 900px;
   margin: 0 auto;
+  height: 380px;
 }
 
 .lunch-card-photos {
@@ -1146,7 +1147,7 @@ ul { list-style: none; }
   grid-template-columns: 1fr 1fr;
   width: 45%;
   flex-shrink: 0;
-  min-height: 380px;
+  height: 100%;
 }
 
 .lunch-card-horizontal .course-card {
