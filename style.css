@@ -1951,10 +1951,10 @@ behold-widget {
   }
 }
 
-/* 900px以下：ヒーロー位置を中央寄りに微調整（PC表示維持） */
+/* 900px以下：ヒーロー位置を右寄りに調整（PC表示維持） */
 @media (max-width: 900px) and (min-width: 769px) {
   .hero-title {
-    left: 50%;
+    left: 65%;
     top: 18%;
     transform: translateX(-50%);
     text-align: center;
