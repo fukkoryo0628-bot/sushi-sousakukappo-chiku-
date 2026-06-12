@@ -2351,46 +2351,98 @@ behold-widget {
 .chef-career {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  position: relative;
+  padding-left: 8px;
+}
+.chef-career::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(201,168,76,0.3) 10%, rgba(201,168,76,0.3) 90%, transparent);
 }
 .chef-career-item {
   display: flex;
-  gap: 28px;
+  gap: 0;
   align-items: flex-start;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 24px 0;
 }
-.chef-career-item:first-child {
-  border-top: 1px solid rgba(201, 168, 76, 0.15);
+.chef-career-item--last {
+  padding-bottom: 0;
+}
+.chef-career-year-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 80px;
+  padding-top: 3px;
 }
 .chef-career-year {
   font-family: var(--font-en);
-  font-size: 1rem;
-  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: rgba(201,168,76,0.6);
+  min-width: 44px;
+}
+.chef-career-item--last .chef-career-year {
   color: var(--gold);
-  min-width: 48px;
-  padding-top: 2px;
 }
-.chef-career-desc {
+.chef-career-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(201,168,76,0.4);
+  flex-shrink: 0;
+}
+.chef-career-dot--gold {
+  background: var(--gold);
+  box-shadow: 0 0 8px rgba(201,168,76,0.6);
+}
+.chef-career-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 20px;
+}
+.chef-career-place {
   font-family: var(--font-serif);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
   color: var(--cream);
-  line-height: 1.8;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
 }
-.chef-career-desc small {
-  display: block;
-  font-size: 0.78rem;
-  color: rgba(245, 240, 232, 0.55);
-  margin-top: 4px;
-  letter-spacing: 0.06em;
+.chef-career-place--gold {
+  color: var(--gold-light);
+}
+.chef-career-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,0.4);
+  padding: 2px 10px;
+  border-radius: 2px;
+  width: fit-content;
+}
+.chef-career-note {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.5);
+  letter-spacing: 0.08em;
+  line-height: 1.8;
 }
 
 @media (max-width: 768px) {
   .chef { padding: 80px 0; }
-  .chef-career-item { gap: 16px; }
-  .chef-career-year { font-size: 0.85rem; min-width: 40px; }
-  .chef-career-desc { font-size: 0.82rem; }
+  .chef-career::before { left: 46px; }
+  .chef-career-year-wrap { min-width: 68px; gap: 12px; }
+  .chef-career-year { font-size: 0.9rem; min-width: 38px; }
+  .chef-career-place { font-size: 0.9rem; }
+  .chef-career-note { font-size: 0.75rem; }
 }
 
 .visually-hidden {
