@@ -391,16 +391,25 @@ ul { list-style: none; }
 }
 
 
+.hero-text-vertical {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.6s forwards;
+}
+
 .hero-sub {
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-  color: rgba(245, 240, 232, 0.75);
-  letter-spacing: 0.25em;
-  margin-bottom: 52px;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: rgba(245, 240, 232, 0.8);
+  letter-spacing: 0.3em;
   font-weight: 300;
-  opacity: 0;
-  animation: fadeUp 1s ease 0.9s forwards;
-  line-height: 2.2;
+  writing-mode: vertical-rl;
+  line-height: 2.4;
 }
 
 .hero-actions {
@@ -1976,8 +1985,12 @@ behold-widget {
   .hero-sub {
     font-size: clamp(0.78rem, 3.2vw, 0.9rem);
     line-height: 2.2;
-    letter-spacing: 0.06em;
-    margin-bottom: 32px;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-text-vertical {
+    gap: 1.2em;
+    margin-bottom: 36px;
   }
 
   .hero-en {
@@ -2169,15 +2182,13 @@ behold-widget {
 /* ヒーロー：場所・ジャンルバッジ */
 .hero-badge {
   font-family: var(--font-serif);
-  font-size: clamp(0.72rem, 2.5vw, 0.85rem);
+  font-size: clamp(0.72rem, 2.5vw, 0.82rem);
   letter-spacing: 0.2em;
   color: var(--gold);
   border: 1px solid rgba(201,168,76,0.45);
   display: inline-block;
-  padding: 6px 18px;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeUp 1s ease 0.6s forwards;
+  padding: 18px 6px;
+  writing-mode: vertical-rl;
 }
 
 /* 店舗情報 アクションボタン */
