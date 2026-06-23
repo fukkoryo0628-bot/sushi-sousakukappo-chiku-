@@ -394,18 +394,18 @@ ul { list-style: none; }
 
 .hero-title {
   position: absolute;
-  left: calc(30% + 120px);
-  top: calc(45% - 220px);
-  transform: none;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
   z-index: 3;
-  text-align: left;
+  text-align: center;
   margin: 0;
   opacity: 0;
   animation: fadeUp 1s ease 0.6s forwards;
 }
 
 .hero-logo-img {
-  width: min(340px, 72vw);
+  width: clamp(200px, 40vw, 340px);
   height: auto;
 }
 
@@ -1947,23 +1947,13 @@ behold-widget {
 
 /* 1200px以下 */
 @media (max-width: 1200px) {
-  .hero-title {
-    left: calc(28% + 80px);
-    top: calc(45% - 210px);
-  }
   .nav-list {
     gap: 24px;
   }
 }
 
-/* 900px以下：ヒーロー位置を右寄りに調整（PC表示維持） */
+/* 900px以下：ヒーロー位置調整 */
 @media (max-width: 900px) and (min-width: 769px) {
-  .hero-title {
-    left: 65%;
-    top: 18%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
   .hero-content {
     bottom: 12%;
     width: 90vw;
@@ -1983,16 +1973,8 @@ behold-widget {
 
 /* 768px以下: スマホ対応 */
 @media (max-width: 768px) {
-  .hero-title {
-    left: 25%;
-    top: 34%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: auto;
-  }
-
   .hero-logo-img {
-    width: min(200px, 52vw);
+    width: clamp(160px, 52vw, 260px);
   }
 
   .hero-content {
