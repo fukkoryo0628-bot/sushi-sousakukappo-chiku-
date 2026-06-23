@@ -392,22 +392,6 @@ ul { list-style: none; }
   animation: fadeUp 1s ease 0.9s forwards;
 }
 
-.hero-title {
-  position: absolute;
-  left: 50%;
-  top: 42%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  text-align: center;
-  margin: 0;
-  opacity: 0;
-  animation: fadeUp 1s ease 0.6s forwards;
-}
-
-.hero-logo-img {
-  width: clamp(200px, 40vw, 340px);
-  height: auto;
-}
 
 .hero-sub {
   font-family: var(--font-serif);
@@ -1973,9 +1957,7 @@ behold-widget {
 
 /* 768px以下: スマホ対応 */
 @media (max-width: 768px) {
-  .hero-logo-img {
-    width: clamp(160px, 52vw, 260px);
-  }
+
 
   .hero-content {
     top: 54%;
