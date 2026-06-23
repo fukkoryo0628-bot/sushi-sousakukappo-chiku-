@@ -371,14 +371,12 @@ ul { list-style: none; }
 }
 
 .hero-content {
-  position: absolute;
-  bottom: 18%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   width: 100%;
   text-align: center;
   z-index: 2;
   padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .hero-en {
@@ -1939,12 +1937,8 @@ behold-widget {
 /* 900px以下：ヒーロー位置調整 */
 @media (max-width: 900px) and (min-width: 769px) {
   .hero-content {
-    bottom: 12%;
     width: 90vw;
     max-width: 90vw;
-    left: 50%;
-    transform: translateX(-50%);
-    top: auto;
   }
 }
 
@@ -1960,14 +1954,9 @@ behold-widget {
 
 
   .hero-content {
-    top: 54%;
-    bottom: auto;
-    left: 50%;
-    transform: translateX(-50%);
     width: 90vw;
     max-width: 90vw;
     padding: 0 16px;
-    box-sizing: border-box;
   }
 
   .hero-sub {
