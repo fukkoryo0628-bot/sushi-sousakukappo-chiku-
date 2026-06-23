@@ -469,6 +469,20 @@ ul { list-style: none; }
 
 .news-list {
   border-top: 1px solid rgba(255,255,255,0.08);
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201,168,76,0.4) transparent;
+}
+.news-list::-webkit-scrollbar {
+  width: 4px;
+}
+.news-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.news-list::-webkit-scrollbar-thumb {
+  background: rgba(201,168,76,0.4);
+  border-radius: 2px;
 }
 
 .news-item {
