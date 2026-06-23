@@ -375,7 +375,7 @@ ul { list-style: none; }
   width: 100%;
   text-align: center;
   z-index: 2;
-  padding: 0 24px;
+  padding: 90px 24px 0;
   box-sizing: border-box;
 }
 
@@ -1957,11 +1957,12 @@ behold-widget {
   }
 }
 
-/* 900px以下：ヒーロー位置調整 */
+/* 900px以下：ヒーロー位置調整（iPad） */
 @media (max-width: 900px) and (min-width: 769px) {
   .hero-content {
     width: 90vw;
     max-width: 90vw;
+    padding-top: 80px;
   }
 }
 
@@ -1979,7 +1980,7 @@ behold-widget {
   .hero-content {
     width: 90vw;
     max-width: 90vw;
-    padding: 0 16px;
+    padding: 70px 16px 0;
   }
 
   .hero-sub {
