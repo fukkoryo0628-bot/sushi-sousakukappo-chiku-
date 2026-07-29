@@ -133,33 +133,6 @@ ul { list-style: none; }
 }
 
 /* =============================================
-   告知バー
-   ============================================= */
-
-.announce-bar {
-  background: var(--gold);
-  padding: 10px 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 101;
-}
-
-.announce-text {
-  font-family: var(--font-serif);
-  font-size: 0.8rem;
-  color: var(--black);
-  letter-spacing: 0.2em;
-  font-weight: 400;
-}
-
-@media (max-width: 480px) {
-  .announce-text { font-size: 0.72rem; letter-spacing: 0.1em; }
-}
-
-/* =============================================
    ヘッダー
    ============================================= */
 
@@ -2116,8 +2089,9 @@ behold-widget {
 
 /* お品書きサブナビ */
 .obukuro-nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
   margin-top: 48px;
 }
@@ -2127,6 +2101,7 @@ behold-widget {
   align-items: center;
   gap: 8px;
   padding: 28px 16px;
+  width: 200px;
   border: 1px solid rgba(201,168,76,0.3);
   text-align: center;
   transition: background var(--transition-fast), border-color var(--transition-fast);
@@ -2149,15 +2124,14 @@ behold-widget {
 }
 @media (max-width: 768px) {
   .obukuro-nav {
-    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-top: 36px;
   }
-  .obukuro-nav-item { padding: 22px 12px; }
+  .obukuro-nav-item { padding: 22px 12px; width: calc(50% - 6px); }
   .obukuro-nav-jp { font-size: 0.95rem; }
 }
 
-/* アラカルト・お土産サブセクション */
+/* お土産サブセクション */
 .menu-sub { padding: 64px 0; }
 .menu-grid-1 { max-width: 100%; margin: 0 auto; grid-template-columns: 1fr; }
 
@@ -2231,7 +2205,7 @@ behold-widget {
 .float-reserve {
   position: fixed;
   right: 20px;
-  bottom: 70px; /* announce-bar の上 */
+  bottom: 20px;
   z-index: 200;
   opacity: 0;
   transform: translateY(10px);

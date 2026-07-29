@@ -51,6 +51,7 @@
     "telephone": "092-332-3501",
     "url": "https://sushi-sousakukappo-chiku.com/",
     "image": "https://sushi-sousakukappo-chiku.com/ogp.png",
+    "logo": "https://sushi-sousakukappo-chiku.com/favicon-512.png",
     "acceptsReservations": "True",
     "hasMap": "https://maps.google.com/?q=鮨創作割烹ちく+糸島市前原中央2-3-39",
     "address": {
@@ -209,6 +210,11 @@
         <div class="news-right">
           <ul class="news-list" id="news-list">
             <li class="news-item">
+              <time class="news-date">2026.07.24</time>
+              <span class="news-category" data-i18n="news-category-notice">お知らせ</span>
+              <p class="news-text">本日、鮨創作割烹ちくをオープンいたしました。皆様のご来店を心よりお待ちしております。</p>
+            </li>
+            <li class="news-item">
               <time class="news-date">2026.06.02</time>
               <span class="news-category" data-i18n="news-category-notice">お知らせ</span>
               <p class="news-text">オープン日が決まりました！2026年7月24日（金）オープン予定です。</p>
@@ -351,10 +357,6 @@
         <h2 class="section-title light">お品書き</h2>
       </div>
       <nav class="obukuro-nav" aria-label="お品書きカテゴリー">
-        <a href="#alacarte" class="obukuro-nav-item">
-          <span class="obukuro-nav-en">À la carte</span>
-          <span class="obukuro-nav-jp">アラカルト</span>
-        </a>
         <a href="#lunch" class="obukuro-nav-item">
           <span class="obukuro-nav-en">Lunch</span>
           <span class="obukuro-nav-jp">ランチ</span>
@@ -368,37 +370,6 @@
           <span class="obukuro-nav-jp">お土産</span>
         </a>
       </nav>
-    </div>
-  </section>
-
-  <!-- アラカルト -->
-  <section class="menu menu-sub" id="alacarte">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label light">À LA CARTE</div>
-        <h2 class="section-title light">アラカルト</h2>
-      </div>
-      <div class="menu-grid menu-grid-1">
-        <div class="menu-card menu-card-large">
-          <div class="menu-card-img">
-            <picture>
-              <source srcset="IMG_0190.webp" type="image/webp">
-              <img src="IMG_0190.jpg" alt="福岡・糸島の創作和食・季節の酒肴" loading="lazy">
-            </picture>
-          </div>
-          <div class="menu-card-body">
-            <p class="menu-item-desc" data-i18n="menu-alacarte-desc">赤酢のシャリで仕立てる旬の一貫。<br>握り・酒肴・巻物・お椀・甘味など、<br>お好みのものをお選びいただけます。</p>
-            <ul class="menu-item-list">
-              <li><span data-i18n="menu-alacarte-l1-label">握り</span><span data-i18n="menu-alacarte-l1-desc">赤酢のシャリで仕立てる旬の一貫</span></li>
-              <li><span data-i18n="menu-alacarte-l2-label">酒肴</span><span data-i18n="menu-alacarte-l2-desc">日替わりで愉しむ季節の逸品</span></li>
-              <li><span data-i18n="menu-alacarte-l3-label">巻物</span><span data-i18n="menu-alacarte-l3-desc">細巻き・太巻き 各種</span></li>
-              <li><span data-i18n="menu-alacarte-l4-label">お椀</span><span data-i18n="menu-alacarte-l4-desc">出汁を味わう一椀</span></li>
-              <li><span data-i18n="menu-alacarte-l5-label">甘味</span><span data-i18n="menu-alacarte-l5-desc">季節の甘味</span></li>
-            </ul>
-            <p class="menu-item-note" data-i18n="menu-alacarte-note">※ 価格はメニュー表をご参照ください</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -419,11 +390,11 @@
           </div>
           <div class="course-body">
             <ul class="course-list">
-              <li><span class="course-num">01</span><span>先付け</span></li>
-              <li><span class="course-num">02</span><span>握り 10貫</span></li>
-              <li><span class="course-num">03</span><span>巻物 1本</span></li>
-              <li><span class="course-num">04</span><span>お椀</span></li>
-              <li><span class="course-num">05</span><span>デザート</span></li>
+              <li><span class="course-num">01</span><span data-i18n="lunch-i1">先付け</span></li>
+              <li><span class="course-num">02</span><span data-i18n="lunch-i2">握り 10貫</span></li>
+              <li><span class="course-num">03</span><span data-i18n="lunch-i3">巻物 1本</span></li>
+              <li><span class="course-num">04</span><span data-i18n="lunch-i4">お椀</span></li>
+              <li><span class="course-num">05</span><span data-i18n="lunch-i5">デザート</span></li>
             </ul>
             <p class="course-note">※ 仕入れにより内容が変わります</p>
           </div>
@@ -603,8 +574,7 @@
               <dd data-i18n="info-address-val">〒819-1116<br>福岡県糸島市前原中央2-3-39</dd>
             </div>
             <div class="info-row">
-              <!-- 7月20日開通後: <dt data-i18n="info-phone-label">電話</dt> に戻す -->
-              <dt data-i18n="info-phone-label">電話（7月20日開通予定）</dt>
+              <dt data-i18n="info-phone-label">電話</dt>
               <dd><a href="tel:0923323501">092-332-3501</a></dd>
             </div>
             <div class="info-row">
@@ -634,7 +604,6 @@
             </div>
           </dl>
           <div class="info-actions">
-            <!-- 7月20日開通後: href="tel:0923323501" のまま使用可 -->
             <a href="tel:0923323501" class="info-action-btn info-action-tel">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.03 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
               092-332-3501
@@ -698,9 +667,8 @@
           </div>
           <h3 class="reserve-title" data-i18n="reserve-phone-title">お電話でのご予約</h3>
           <p class="reserve-desc" data-i18n="reserve-phone-desc">ご不明な点やご要望はお電話にてお気軽にどうぞ。担当者が丁寧にご対応します。</p>
-          <!-- 7月20日開通後: <small>（7月20日開通予定）</small> を削除 -->
           <a href="tel:0923323501" class="btn btn-outline reserve-btn tel-btn">
-            092-332-3501<br><small>（7月20日開通予定）</small>
+            092-332-3501
           </a>
           <p class="reserve-hours" data-i18n="reserve-hours">受付時間：15:00〜22:00（水曜除く）</p>
         </div>
@@ -755,8 +723,7 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.15 2 11.25c0 4.56 3.58 8.37 8.44 9.1.33.07.77.22.89.5.1.26.07.67.03.93l-.14.87c-.04.26-.2 1 .88.55 1.08-.45 5.83-3.43 7.95-5.88C21.38 15.32 22 13.36 22 11.25 22 6.15 17.52 2 12 2z"/></svg>
         </a>
       </div>
-      <!-- 7月20日開通後: <small>（7月20日開通予定）</small> を削除 -->
-      <p class="footer-tel"><a href="tel:0923323501">092-332-3501</a><small>（7月20日開通予定）</small></p>
+      <p class="footer-tel"><a href="tel:0923323501">092-332-3501</a></p>
       <p class="footer-address" data-i18n="footer-address">〒819-1116 福岡県糸島市前原中央2-3-39</p>
       <p class="footer-copy">&copy; 2026 鮨創作割烹ちく. All Rights Reserved.</p>
     </div>
@@ -768,11 +735,6 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       ご予約
     </a>
-  </div>
-
-  <!-- 告知バー（下固定） -->
-  <div class="announce-bar">
-    <p class="announce-text" data-i18n="announce">2026年7月24日オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします</p>
   </div>
 
   <nav class="nav" id="nav">

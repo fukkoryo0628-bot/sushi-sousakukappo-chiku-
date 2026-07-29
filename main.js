@@ -17,19 +17,6 @@ const i18nData = {
     'concept-body-2': '福岡・糸島で唯一の江戸前寿司として、創作和食の技も交えながら、季節の移ろいを一皿ごとに表現します。<br>赤酢のシャリ、丁寧に仕込む酒肴、そして握りへと続く流れ。<br>料理と空間、会話までも含めて、その日だけの時間をお愉しみください。',
     'concept-body-3': 'カウンター8席。職人の所作を間近に感じながら味わう空間と、<br>ゆったりと過ごせる個室をご用意しております。<br>福岡県糸島市での接待や記念日、大切な方とのお食事にも、静かなひとときをお過ごしください。',
     'menu-title': 'メニュー',
-    'menu-alacarte-name': 'アラカルト',
-    'menu-alacarte-desc': '赤酢のシャリで仕立てる旬の一貫。<br>握り・酒肴・巻物・お椀・甘味など、<br>お好みのものをお選びいただけます。',
-    'menu-alacarte-l1-label': '握り',
-    'menu-alacarte-l1-desc': '赤酢のシャリで仕立てる旬の一貫',
-    'menu-alacarte-l2-label': '酒肴',
-    'menu-alacarte-l2-desc': '日替わりで愉しむ季節の逸品',
-    'menu-alacarte-l3-label': '巻物',
-    'menu-alacarte-l3-desc': '細巻き・太巻き 各種',
-    'menu-alacarte-l4-label': 'お椀',
-    'menu-alacarte-l4-desc': '出汁を味わう一椀',
-    'menu-alacarte-l5-label': '甘味',
-    'menu-alacarte-l5-desc': '季節の甘味',
-    'menu-alacarte-note': '※ 価格はメニュー表をご参照ください',
     'menu-takeout-name': 'お持ち帰り',
     'menu-takeout-desc': 'ご自宅でのお食事や、<br>法事・お祝いなどのお集まりにも。<br>前日までのご予約をお願いいたします。',
     'menu-takeout-l1-label': '折詰',
@@ -102,7 +89,6 @@ const i18nData = {
     'reserve-note-4': '貸切でのご利用も承っております。お気軽にご相談ください。',
     'reserve-note-5': 'お子様のご来店につきましては、事前にご相談をお願いいたします。',
     'footer-address': '〒819-1116 福岡県糸島市前原中央2-3-39',
-    'announce': '2026年7月24日オープン予定 &nbsp;|&nbsp; 詳細はInstagramにてお知らせいたします',
   },
   en: {
     'hero-sub': 'The only Edomae sushi in Itoshima.<br>Seasonal fish from across Japan, the four seasons of Fukuoka\'s Itoshima.',
@@ -117,19 +103,6 @@ const i18nData = {
     'concept-body-2': 'Fukuoka-Itoshima\'s only Edomae sushi restaurant, expressing the changing seasons in every dish, weaving in the techniques of creative Japanese cuisine.<br>Red vinegar shari, carefully prepared sake snacks, leading into the nigiri.<br>Please enjoy a time that is uniquely yours — the food, the space, the conversation.',
     'concept-body-3': 'Eight counter seats where you can witness the chef\'s craft up close,<br>and a private room for unhurried dining.<br>Whether for business entertaining, anniversaries, or a special meal with loved ones in Itoshima — please savor a quiet moment.',
     'menu-title': 'Menu',
-    'menu-alacarte-name': 'À la carte',
-    'menu-alacarte-desc': 'Seasonal nigiri crafted with red vinegar shari.<br>Choose from nigiri, sake snacks, rolls, soup, and sweets<br>to suit your preference.',
-    'menu-alacarte-l1-label': 'Nigiri',
-    'menu-alacarte-l1-desc': 'Seasonal nigiri with red vinegar shari',
-    'menu-alacarte-l2-label': 'Sake snacks',
-    'menu-alacarte-l2-desc': 'Daily seasonal delicacies',
-    'menu-alacarte-l3-label': 'Rolls',
-    'menu-alacarte-l3-desc': 'Thin rolls, thick rolls & more',
-    'menu-alacarte-l4-label': 'Soup',
-    'menu-alacarte-l4-desc': 'A bowl to savor the dashi broth',
-    'menu-alacarte-l5-label': 'Sweets',
-    'menu-alacarte-l5-desc': 'Seasonal sweets',
-    'menu-alacarte-note': '* Please refer to our menu for prices',
     'menu-takeout-name': 'Take-out',
     'menu-takeout-desc': 'Perfect for home dining or gatherings<br>such as memorial services and celebrations.<br>Please reserve by the previous day.',
     'menu-takeout-l1-label': 'Bento box',
@@ -202,7 +175,6 @@ const i18nData = {
     'reserve-note-4': 'Private dining events are available. Please feel free to inquire.',
     'reserve-note-5': 'Please consult us in advance regarding dining with children.',
     'footer-address': '2-3-39 Maebaru Chuo, Itoshima, Fukuoka 819-1116, Japan',
-    'announce': 'Opening July 24, 2026 &nbsp;|&nbsp; Details to be announced on Instagram',
   },
   'zh-cn': {
     'hero-sub': '糸岛唯一的江户前寿司和创意和食。<br>来自全国各地的时令鱼和福冈·糸岛的四季风味',
@@ -217,19 +189,6 @@ const i18nData = {
     'concept-body-2': '作为福冈·糸岛唯一的江户前寿司餐厅，融合创意和食技法，在每道菜中呈现季节的变迁。<br>赤醋醋饭、精心调制的下酒菜，再到握寿司的流程。<br>料理、空间、乃至对话，请尽享这一天独特的时光。',
     'concept-body-3': '吧台8席，可近距离感受职人技艺，<br>另设可放松用餐的包间。<br>无论是商务接待、纪念日，还是与重要之人的用餐，<br>欢迎在福冈县糸岛市度过宁静时光。',
     'menu-title': '菜单',
-    'menu-alacarte-name': '单点',
-    'menu-alacarte-desc': '赤醋醋饭搭配时令食材的握寿司。<br>可从握寿司、下酒菜、卷物、汤品、甜点中<br>自由选择。',
-    'menu-alacarte-l1-label': '握寿司',
-    'menu-alacarte-l1-desc': '赤醋醋饭搭配时令食材',
-    'menu-alacarte-l2-label': '下酒菜',
-    'menu-alacarte-l2-desc': '每日更换的时令佳肴',
-    'menu-alacarte-l3-label': '卷物',
-    'menu-alacarte-l3-desc': '细卷、粗卷等各种',
-    'menu-alacarte-l4-label': '汤品',
-    'menu-alacarte-l4-desc': '品味高汤的一碗',
-    'menu-alacarte-l5-label': '甜点',
-    'menu-alacarte-l5-desc': '时令甜点',
-    'menu-alacarte-note': '※ 价格请参阅菜单',
     'menu-takeout-name': '外带',
     'menu-takeout-desc': '适合居家用餐，<br>或法事、庆典等聚会。<br>请于前一天完成预约。',
     'menu-takeout-l1-label': '折箱',
@@ -302,7 +261,6 @@ const i18nData = {
     'reserve-note-4': '可接受包场预约，欢迎咨询。',
     'reserve-note-5': '携带儿童用餐请提前咨询。',
     'footer-address': '〒819-1116 福冈县糸岛市前原中央2-3-39',
-    'announce': '预计2026年7月24日开业 &nbsp;|&nbsp; 详情将在Instagram公布',
   },
   'zh-tw': {
     'hero-sub': '糸島唯一的江戶前壽司和創意和食。<br>來自全國各地的時令魚和福岡·糸島的四季風味',
@@ -317,19 +275,6 @@ const i18nData = {
     'concept-body-2': '作為福岡·糸島唯一的江戶前壽司餐廳，融合創意和食技法，在每道菜中呈現季節的變遷。<br>赤醋醋飯、精心調製的下酒菜，再到握壽司的流程。<br>料理、空間、乃至對話，請盡享這一天獨特的時光。',
     'concept-body-3': '吧台8席，可近距離感受職人技藝，<br>另設可放鬆用餐的包廂。<br>無論是商務接待、紀念日，還是與重要之人的用餐，<br>歡迎在福岡縣糸島市度過寧靜時光。',
     'menu-title': '菜單',
-    'menu-alacarte-name': '單點',
-    'menu-alacarte-desc': '赤醋醋飯搭配時令食材的握壽司。<br>可從握壽司、下酒菜、卷物、湯品、甜點中<br>自由選擇。',
-    'menu-alacarte-l1-label': '握壽司',
-    'menu-alacarte-l1-desc': '赤醋醋飯搭配時令食材',
-    'menu-alacarte-l2-label': '下酒菜',
-    'menu-alacarte-l2-desc': '每日更換的時令佳餚',
-    'menu-alacarte-l3-label': '卷物',
-    'menu-alacarte-l3-desc': '細卷、粗卷等各種',
-    'menu-alacarte-l4-label': '湯品',
-    'menu-alacarte-l4-desc': '品味高湯的一碗',
-    'menu-alacarte-l5-label': '甜點',
-    'menu-alacarte-l5-desc': '時令甜點',
-    'menu-alacarte-note': '※ 價格請參閱菜單',
     'menu-takeout-name': '外帶',
     'menu-takeout-desc': '適合居家用餐，<br>或法事、慶典等聚會。<br>請於前一天完成預約。',
     'menu-takeout-l1-label': '折箱',
@@ -402,9 +347,66 @@ const i18nData = {
     'reserve-note-4': '可接受包場預約，歡迎諮詢。',
     'reserve-note-5': '攜帶兒童用餐請提前諮詢。',
     'footer-address': '〒819-1116 福岡縣糸島市前原中央2-3-39',
-    'announce': '預計2026年7月24日開業 &nbsp;|&nbsp; 詳情將在Instagram公布',
   }
 };
+
+// ============================================================
+// 🍣 今週のコース内容（週替わりメニュー）
+// ------------------------------------------------------------
+// 内容を変える週は、この中の日本語・英語(en)・中文簡体(cn)・中文繁体(tw)を
+// それぞれ書き換えるだけでOKです。他の場所は触らなくて大丈夫です。
+//
+// 品数を増やしたり減らしたりする場合は、index.html 側の
+// 対象コースの <li> の数も合わせて増減してください。
+// ============================================================
+const weeklyMenu = {
+  lunch: [
+    { ja: '先付け',    en: 'Appetizer',         cn: '前菜',        tw: '前菜' },
+    { ja: '握り 10貫', en: 'Nigiri  10 pieces', cn: '握寿司 10贯', tw: '握壽司 10貫' },
+    { ja: '巻物 1本',  en: 'Roll  1 piece',     cn: '卷物 1条',    tw: '卷物 1條' },
+    { ja: 'お椀',      en: 'Soup',              cn: '汤品',        tw: '湯品' },
+    { ja: 'デザート',  en: 'Dessert',           cn: '甜点',        tw: '甜點' },
+  ],
+  courseA: [
+    { ja: '先付け',    en: 'Appetizer',         cn: '前菜',        tw: '前菜' },
+    { ja: '握り 10貫', en: 'Nigiri  10 pieces', cn: '握寿司 10贯', tw: '握壽司 10貫' },
+    { ja: '巻物 1本',  en: 'Roll  1 piece',     cn: '卷物 1条',    tw: '卷物 1條' },
+    { ja: 'お椀',      en: 'Soup',              cn: '汤品',        tw: '湯品' },
+    { ja: 'デザート',  en: 'Dessert',           cn: '甜点',        tw: '甜點' },
+  ],
+  courseB: [
+    { ja: '先付け',     en: 'Appetizer',        cn: '前菜',    tw: '前菜' },
+    { ja: '造里',       en: 'Sashimi',          cn: '刺身',    tw: '生魚片' },
+    { ja: '蒸し物',     en: 'Steamed dish',     cn: '蒸物',    tw: '蒸物' },
+    { ja: '揚げ物',     en: 'Fried dish',       cn: '炸物',    tw: '炸物' },
+    { ja: '寿司 8貫',   en: 'Sushi  8 pieces',  cn: '寿司 8贯', tw: '壽司 8貫' },
+    { ja: 'お椀',       en: 'Soup',             cn: '汤品',    tw: '湯品' },
+    { ja: '水菓子',     en: 'Dessert',          cn: '甜点',    tw: '甜點' },
+  ],
+  courseC: [
+    { ja: '八寸',        en: 'Hassun (seasonal platter)', cn: '八寸（时令拼盘）', tw: '八寸（時令拼盤）' },
+    { ja: '造里',        en: 'Sashimi',                   cn: '刺身',            tw: '生魚片' },
+    { ja: '蒸し物',      en: 'Steamed dish',              cn: '蒸物',            tw: '蒸物' },
+    { ja: '煮物',        en: 'Simmered dish',             cn: '煮物',            tw: '煮物' },
+    { ja: '揚げ物',      en: 'Fried dish',                cn: '炸物',            tw: '炸物' },
+    { ja: '寿司 10貫',   en: 'Sushi  10 pieces',          cn: '寿司 10贯',       tw: '壽司 10貫' },
+    { ja: 'お椀',        en: 'Soup',                      cn: '汤品',            tw: '湯品' },
+    { ja: '水菓子',      en: 'Dessert',                   cn: '甜点',            tw: '甜點' },
+  ],
+};
+
+const weeklyMenuKeyPrefix = { lunch: 'lunch-i', courseA: 'course-a-i', courseB: 'course-b-i', courseC: 'course-c-i' };
+const weeklyMenuLangMap = { ja: 'ja', en: 'en', cn: 'zh-cn', tw: 'zh-tw' };
+
+Object.entries(weeklyMenu).forEach(([course, items]) => {
+  const prefix = weeklyMenuKeyPrefix[course];
+  items.forEach((item, i) => {
+    const key = prefix + (i + 1);
+    Object.entries(weeklyMenuLangMap).forEach(([shortLang, dataLang]) => {
+      if (item[shortLang] !== undefined) i18nData[dataLang][key] = item[shortLang];
+    });
+  });
+});
 
 const langLabels = { ja: '日本語', en: 'English', 'zh-cn': '中文', 'zh-tw': '繁體中文' };
 const langAttr   = { ja: 'ja', en: 'en', 'zh-cn': 'zh-Hans', 'zh-tw': 'zh-Hant' };
