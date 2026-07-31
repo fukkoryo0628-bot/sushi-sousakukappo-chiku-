@@ -2154,15 +2154,17 @@ behold-widget {
   }
 }
 
-/* ヒーロー：場所・ジャンルバッジ */
+/* ヒーロー：場所・ジャンルバッジ（h1） */
 .hero-badge {
   font-family: var(--font-serif);
   font-size: clamp(0.72rem, 2.5vw, 0.82rem);
+  font-weight: 400;
   letter-spacing: 0.2em;
   color: var(--gold);
   border: 1px solid rgba(201,168,76,0.45);
   display: inline-block;
   padding: 18px 6px;
+  margin: 0;
   writing-mode: vertical-rl;
 }
 
