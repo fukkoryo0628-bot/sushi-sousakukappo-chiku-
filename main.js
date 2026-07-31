@@ -1,5 +1,7 @@
 /* 鮨創作割烹ちく — メインJS */
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // =============================================
 // 言語切り替え（JP / EN）
 // =============================================
@@ -497,8 +499,13 @@ nav.querySelectorAll('.nav-link').forEach(link => {
 const revealTargets = [
   '.concept-text',
   '.concept-visual',
+  '.chef-text',
+  '.chef-career-item',
   '.menu-card',
   '.course-card',
+  '.course-photo-item',
+  '.budget-course',
+  '.news-item',
   '.info-text',
   '.info-map',
   '.reserve-card',
@@ -541,13 +548,34 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// 木目テクスチャ：マウスパララックス（ヒーローのみ）
+// ヒーロー画像：マウス＆スクロールパララックス
 const heroBg = document.querySelector('.hero-bg');
-if (heroBg) {
+if (heroBg && !prefersReducedMotion) {
+  let mouseX = 0;
+  let mouseY = 0;
+  let scrollY = 0;
+  let heroTicking = false;
+
+  const applyHeroTransform = () => {
+    heroBg.style.transform = `translate(${mouseX}px, ${mouseY + scrollY}px) scale(1.05)`;
+  };
+
   document.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
-    heroBg.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px) scale(1.05)`;
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 20 * 0.3;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 20 * 0.3;
+    applyHeroTransform();
+  }, { passive: true });
+
+  window.addEventListener('scroll', () => {
+    if (heroTicking) return;
+    heroTicking = true;
+    requestAnimationFrame(() => {
+      if (window.scrollY < window.innerHeight) {
+        scrollY = window.scrollY * 0.25;
+      }
+      applyHeroTransform();
+      heroTicking = false;
+    });
   }, { passive: true });
 }
 
