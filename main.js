@@ -499,8 +499,10 @@ nav.querySelectorAll('.nav-link').forEach(link => {
 const revealTargets = [
   '.concept-text',
   '.concept-visual',
+  '.chef-photo',
   '.chef-text',
   '.chef-career-item',
+  '.gallery-item',
   '.menu-card',
   '.course-card',
   '.course-photo-item',
