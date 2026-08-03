@@ -30,8 +30,8 @@ const i18nData = {
     'menu-takeout-l4-label': 'お集まり',
     'menu-takeout-l4-desc': '法事・お祝い・慶事対応可',
     'menu-takeout-note': '※ 前日までのご予約をお願いいたします',
-    'omakase-title': 'ディナーコース',
-    'omakase-desc': 'その日の仕入れにより内容が変わります。',
+    'omakase-title': 'ランチ・ディナーコース',
+    'omakase-desc': 'ランチは12時一斉スタート（前日までのご予約をお願いします）。仕入れにより内容が変わります。',
     'course-a-name': '握りコース',
     'course-b-name': 'おまかせコース',
     'course-b-badge': 'おすすめ',
@@ -116,8 +116,8 @@ const i18nData = {
     'menu-takeout-l4-label': 'Gatherings',
     'menu-takeout-l4-desc': 'Memorial services, celebrations & special occasions',
     'menu-takeout-note': '* Please reserve by the previous day',
-    'omakase-title': 'Dinner Courses',
-    'omakase-desc': 'Course contents vary based on the day\'s sourcing.',
+    'omakase-title': 'Lunch & Dinner Courses',
+    'omakase-desc': 'Lunch starts at 12:00 for all guests (please reserve by the previous day). Course contents vary based on the day\'s sourcing.',
     'course-a-name': 'Nigiri Course',
     'course-b-name': 'Omakase Course',
     'course-b-badge': 'Recommended',
@@ -202,8 +202,8 @@ const i18nData = {
     'menu-takeout-l4-label': '聚会',
     'menu-takeout-l4-desc': '法事、庆典、喜事均可',
     'menu-takeout-note': '※ 请于前一天完成预约',
-    'omakase-title': '主厨推荐套餐',
-    'omakase-desc': '内容根据当日食材而定。',
+    'omakase-title': '午餐・晚餐套餐',
+    'omakase-desc': '午餐12点统一开始（请于前一天完成预约）。内容根据当日食材而定。',
     'course-a-name': '握寿司套餐',
     'course-b-name': '主厨套餐',
     'course-b-badge': '推荐',
@@ -288,8 +288,8 @@ const i18nData = {
     'menu-takeout-l4-label': '聚會',
     'menu-takeout-l4-desc': '法事、慶典、喜事均可',
     'menu-takeout-note': '※ 請於前一天完成預約',
-    'omakase-title': '主廚推薦套餐',
-    'omakase-desc': '內容根據當日食材而定。',
+    'omakase-title': '午餐・晚餐套餐',
+    'omakase-desc': '午餐12點統一開始（請於前一天完成預約）。內容根據當日食材而定。',
     'course-a-name': '握壽司套餐',
     'course-b-name': '主廚套餐',
     'course-b-badge': '推薦',
@@ -499,10 +499,10 @@ nav.querySelectorAll('.nav-link').forEach(link => {
 const revealTargets = [
   '.concept-text',
   '.concept-visual',
+  '.ingredients-item',
   '.chef-photo',
   '.chef-text',
   '.chef-career-item',
-  '.gallery-item',
   '.menu-card',
   '.course-card',
   '.course-photo-item',
@@ -549,6 +549,59 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// コース写真スライドショー
+const courseSlideshow = document.getElementById('course-slideshow');
+if (courseSlideshow) {
+  const slides = courseSlideshow.querySelectorAll('.course-slide');
+  const dots = courseSlideshow.querySelectorAll('.course-slideshow-dot');
+  let currentSlide = 0;
+  let slideTimer = null;
+
+  const showSlide = (index) => {
+    slides[currentSlide].classList.remove('is-active');
+    dots[currentSlide].classList.remove('is-active');
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('is-active');
+    dots[currentSlide].classList.add('is-active');
+  };
+
+  const startSlideshow = () => {
+    if (prefersReducedMotion) return;
+    stopSlideshow();
+    slideTimer = setInterval(() => showSlide(currentSlide + 1), 4000);
+  };
+
+  function stopSlideshow() {
+    if (slideTimer) clearInterval(slideTimer);
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      showSlide(i);
+      startSlideshow();
+    });
+  });
+
+  courseSlideshow.addEventListener('mouseenter', stopSlideshow);
+  courseSlideshow.addEventListener('mouseleave', startSlideshow);
+
+  startSlideshow();
+}
+
+// ヒーロー画像カルーセル
+const heroSlideRoot = document.querySelector('.hero-bg');
+if (heroSlideRoot) {
+  const heroSlides = heroSlideRoot.querySelectorAll('.hero-slide');
+  if (heroSlides.length > 1 && !prefersReducedMotion) {
+    let heroSlideIndex = 0;
+    setInterval(() => {
+      heroSlides[heroSlideIndex].classList.remove('is-active');
+      heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+      heroSlides[heroSlideIndex].classList.add('is-active');
+    }, 5000);
+  }
+}
 
 // ヒーロー画像：マウス＆スクロールパララックス
 const heroBg = document.querySelector('.hero-bg');
