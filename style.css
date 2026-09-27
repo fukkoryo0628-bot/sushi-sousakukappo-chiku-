@@ -974,6 +974,22 @@ ul { list-style: none; }
   object-fit: contain;
   background: var(--black-soft);
 }
+.menu-card-img-duo {
+  display: flex;
+  gap: 2px;
+}
+.menu-card-img-duo picture {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.menu-card-img-duo picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .menu-card-img::after {
   content: '';
   position: absolute;
