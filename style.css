@@ -893,6 +893,15 @@ ul { list-style: none; }
   overflow-wrap: anywhere;
 }
 
+.menu-card-large.menu-card-stack {
+  flex-direction: column;
+}
+.menu-card-large.menu-card-stack .menu-card-img {
+  width: 100%;
+  height: 420px;
+  min-height: unset;
+}
+
 .menu-item-list {
   margin: 24px 0 20px;
   display: flex;
@@ -2022,6 +2031,7 @@ behold-widget {
   .menu-card-img { height: 120px; }
   .menu-card.menu-card-large { flex-direction: column; }
   .menu-card.menu-card-large .menu-card-img { width: 100%; height: 200px; min-height: unset; }
+  .menu-card-large.menu-card-stack .menu-card-img { height: 240px; }
   .menu-card.menu-card-large .menu-card-body { padding: 24px 20px; }
 
   /* おまかせ */
