@@ -75,13 +75,13 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Friday","Saturday","Sunday"],
+        "dayOfWeek": ["Tuesday","Wednesday","Friday","Saturday","Sunday"],
         "opens": "12:00",
         "closes": "14:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Thursday","Sunday"],
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday"],
         "opens": "17:30",
         "closes": "22:30"
       },
@@ -89,7 +89,7 @@
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Friday","Saturday"],
         "opens": "17:30",
-        "closes": "24:00"
+        "closes": "23:00"
       }
     ],
     "sameAs": [
@@ -721,18 +721,16 @@
               <dt data-i18n="info-hours-label">営業時間</dt>
               <dd data-i18n="info-hours-val">
                 昼（要予約）12:00〜14:00<br>
-                <small>※月・火・金・土・日のみ　12:00一斉スタート</small><br>
-                <small>※水・木曜日はランチ営業なし</small><br>
+                <small>※火・水・金・土・日　12:00一斉スタート</small><br>
                 <br>
-                夜 17:30〜22:30（L.O.22:00）<br>
-                <br>
-                金・土曜日 17:30〜24:00<br>
-                （お食事L.O.23:00／ドリンクL.O.23:30）
+                夜 17:30〜22:30（最終入店20:30）<br>
+                金・土・祝前日 17:30〜23:00（最終入店21:00）<br>
+                <small>※日曜日はランチのみの営業です</small>
               </dd>
             </div>
             <div class="info-row">
               <dt data-i18n="info-closed-label">定休日</dt>
-              <dd data-i18n="info-closed-val">水曜日</dd>
+              <dd data-i18n="info-closed-val">月曜日・日曜日の夜<br><small>※2026年12月1日より。11月中は水曜定休です</small></dd>
             </div>
             <div class="info-row">
               <dt data-i18n="info-seats-label">席数</dt>
@@ -810,7 +808,7 @@
           <a href="tel:0923323501" class="btn btn-outline reserve-btn tel-btn">
             092-332-3501
           </a>
-          <p class="reserve-hours" data-i18n="reserve-hours">受付時間：15:00〜22:00（水曜除く）</p>
+          <p class="reserve-hours" data-i18n="reserve-hours">受付時間：15:00〜22:00（月曜除く）</p>
         </div>
         <div class="reserve-divider">
           <span>or</span>
