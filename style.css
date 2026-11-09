@@ -639,6 +639,9 @@ ul { list-style: none; }
 .concept-img-1 { aspect-ratio: 3/4; }
 .concept-img-2 { aspect-ratio: 3/4; margin-top: 40px; }
 
+.concept-img-1 .concept-img-photo { object-position: 80% center; }
+.concept-img-2 .concept-img-photo { object-position: 62% center; }
+
 .concept-img-photo {
   width: 100%;
   height: 100%;
